@@ -75,6 +75,23 @@ public class TidalSet {
         }
         self.init(status: status, callCount: callCount, coordinate: responseCoordinate, requestCoordinate: requestCoordinate, atlas: atlas, copyright: copyright, heights: heightsArray, extremes: extremesArray)
     }
+    
+    func tidalHeightAt(date: Date) -> TidalHeight? {
+        
+    }
+    
+    /// Returns the before and after extreme using the given date
+    func tidalExtremesAt(date: Date) -> [TidalExtreme]? {
+        
+    }
+    
+    lazy var startDate: Date = {
+        
+    }()
+    
+    lazy var endDate: Date = {
+        
+    }()
 }
 
 extension JSON {
