@@ -8,8 +8,9 @@
 
 import Foundation
 import CoreLocation
+import SwiftyJSON
 
-class TidalSet {
+public class TidalSet {
     open fileprivate (set) var status: Int
     open fileprivate (set) var callCount: Int
     open fileprivate (set) var coordinate: CLLocationCoordinate2D
@@ -19,56 +20,71 @@ class TidalSet {
     open fileprivate (set) var heights: [TidalHeight]?
     open fileprivate (set) var extremes: [TidalExtreme]?
     open fileprivate (set) var timestamp: Date
-}
 
-class TidalHeight {
-    /// Date/Time of this extreme (in seconds since the unix epoch).
-    open fileprivate (set) var dt: Int
-    /// Date/Time of this extreme (in ISO 8601 standard date and time format, e.g.: 2016-11-22T07:15+0000 ).
-    open fileprivate (set) var date: Date
-    /// Height (in meters) of the tide.
-    open fileprivate (set) var height: Double
-    
-    init(dt: Int, date: Date, height: Double) {
-        self.dt = dt
-        self.date = Date
-        self.height = height
+    public enum Keys: String {
+        case status = "status"
+        case callCount = "callCount"
+        case responseLat = "responseLat"
+        case responseLon = "responseLon"
+        case requestLat = "requestLat"
+        case requestLon = "requestLon"
+        case atlas = "atlas"
+        case copyright = "copyright"
+        case heights = "heights"
+        case extremes = "extremes"
+        case timestamp = "timestamp"
     }
     
-    enum Keys: String {
-        case dt = "dt"
-        case date = "date"
-        case height = "height"
-        case type = "type"
+    public init(status: Int, callCount: Int, coordinate: CLLocationCoordinate2D, requestCoordinate: CLLocationCoordinate2D, atlas: String?, copyright: String?, heights: [TidalHeight]?, extremes: [TidalExtreme]?, timestamp: Date = Date()) {
+        self.status = status
+        self.callCount = callCount
+        self.coordinate = coordinate
+        self.requestCoordinate = requestCoordinate
+        self.atlas = atlas
+        self.copyright = copyright
+        self.heights = heights
+        self.extremes = extremes
+        self.timestamp = timestamp
     }
-    
-    static var dateFormatter: DateFormatter = {
-        let dateFormatter: DateFormatter = DateFormatter()
-        #if !os(Linux)
-            DateFormatter.defaultFormatterBehavior = DateFormatter.Behavior.default
-        #endif
-        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mmZZZ"
-        return dateFormatter
-    }()
-    
-    init?(dictionary: [String: Any]) {
-        guard let dateString = dictionary[Keys.date.rawValue] as? String else {
+
+    public convenience init?(json: JSON) {
+        guard let status = json[Keys.status.rawValue].int, let callCount = json[Keys.callCount.rawValue].int else {
             return nil
         }
-        guard let date: Date = TidalHeight.dateFormatter.date(from: dateString) else {
+        guard let requestLon = json[Keys.requestLon.rawValue].doublePaz, let requestLat = json[Keys.requestLat.rawValue].doublePaz  else {
             return nil
         }
-
+        let requestCoordinate = CLLocationCoordinate2D(latitude: requestLat, longitude: requestLon)
+        guard let lon = json[Keys.responseLon.rawValue].doublePaz, let lat = json[Keys.responseLat.rawValue].doublePaz  else {
+            return nil
+        }
+        let responseCoordinate = CLLocationCoordinate2D(latitude: lat, longitude: lon)
+        guard let atlas = json[Keys.atlas.rawValue].string else {
+            return nil
+        }
+        guard let copyright = json[Keys.copyright.rawValue].string else {
+            return nil
+        }
+        var heightsArray: [TidalHeight]?
+        if let heightsJsonArray = json[Keys.heights.rawValue].array {
+            heightsArray = TidalHeight.arrayFrom(heightsJsonArray: heightsJsonArray)
+        }
+        var extremesArray: [TidalExtreme]?
+        if let extremesJsonArray = json[Keys.extremes.rawValue].array {
+            extremesArray = TidalExtreme.arrayFrom(extremesJsonArray: extremesJsonArray)
+        }
+        self.init(status: status, callCount: callCount, coordinate: responseCoordinate, requestCoordinate: requestCoordinate, atlas: atlas, copyright: copyright, heights: heightsArray, extremes: extremesArray)
     }
 }
 
-class TidalExtreme: TidalHeight {
-    enum Type {
-        case low
-        case high
+extension JSON {
+    var doublePaz: Double? {
+        if let double = self.double {
+            return double
+        }
+        if let doubleString = self.string {
+            return Double(doubleString)
+        }
+        return nil
     }
-
-    open fileprivate (set) var type: Type
-    
 }
