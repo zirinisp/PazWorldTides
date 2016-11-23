@@ -77,17 +77,4 @@ public class PazWorldTides {
         }
         task.resume()
     }
-
-    static func dictionaryFromJSonData(_ data: Data) throws -> [String: Any] {
-        do {
-            if let responseDictionary = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions(rawValue: 0)) as? [String: Any] {
-                return responseDictionary
-            }
-        } catch let error as NSError {
-            throw PazWorldTides.RequestError.jSonError(error: error)
-        }
-        throw PazWorldTides.RequestError.jSonError(error: nil)
-    }
-
 }
-

@@ -76,21 +76,30 @@ public class TidalSet {
         self.init(status: status, callCount: callCount, coordinate: responseCoordinate, requestCoordinate: requestCoordinate, atlas: atlas, copyright: copyright, heights: heightsArray, extremes: extremesArray)
     }
     
-    func tidalHeightAt(date: Date) -> TidalHeight? {
-        
-    }
-    
-    /// Returns the before and after extreme using the given date
-    func tidalExtremesAt(date: Date) -> [TidalExtreme]? {
-        
-    }
-    
-    lazy var startDate: Date = {
-        
+    lazy var startDate: Date? = {
+        guard let heights = self.heights, heights.count != 0 else {
+            return nil
+        }
+        var startDate: Date = heights[0].date
+        for height in heights {
+            if startDate.isAfter(height.date) {
+                startDate = height.date
+            }
+        }
+        return startDate
     }()
     
-    lazy var endDate: Date = {
-        
+    lazy var endDate: Date? = {
+        guard let heights = self.heights, heights.count != 0 else {
+            return nil
+        }
+        var startDate: Date = heights[0].date
+        for height in heights {
+            if startDate.isBefore(height.date) {
+                startDate = height.date
+            }
+        }
+        return startDate
     }()
 }
 
@@ -104,4 +113,15 @@ extension JSON {
         }
         return nil
     }
+}
+
+extension Date {
+    public func isAfter(_ date: Date) -> Bool{
+        return (self.compare(date as Date) == ComparisonResult.orderedDescending)
+    }
+    
+    public func isBefore(_ date: Date) -> Bool{
+        return (self.compare(date as Date) == ComparisonResult.orderedAscending)
+    }
+    
 }
