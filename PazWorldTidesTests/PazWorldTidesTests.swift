@@ -7,13 +7,13 @@
 //
 
 import XCTest
-@testable import PazWorldTides
+import PazWorldTides
 import SwiftyJSON
 import CoreLocation
 
 class PazWorldTidesTests: XCTestCase {
     
-    var worldTides = PazWorldTides(apiKey: "a652eeb9-136c-4732-a8c1-0e592e257b58")
+    var worldTides = PazWorldTides(apiKey: "")
     
     override func setUp() {
         super.setUp()

@@ -9,16 +9,21 @@
 /* Begin PBXBuildFile section */
 		6468A2F41DE42B6600D734A6 /* PazWorldTides.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6468A2EA1DE42B6600D734A6 /* PazWorldTides.framework */; };
 		6468A2F91DE42B6600D734A6 /* PazWorldTidesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6468A2F81DE42B6600D734A6 /* PazWorldTidesTests.swift */; };
-		6468A3051DE42BA100D734A6 /* PazWorldTides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6468A3041DE42BA100D734A6 /* PazWorldTides.swift */; };
-		6468A3071DE42C3300D734A6 /* TidalSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6468A3061DE42C3300D734A6 /* TidalSet.swift */; };
-		647D4AD21DE48C3F0008F318 /* TidalHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D4AD11DE48C3F0008F318 /* TidalHeight.swift */; };
-		647D4AD41DE48C490008F318 /* TidalExtreme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D4AD31DE48C490008F318 /* TidalExtreme.swift */; };
-		647D4AD61DE48CB90008F318 /* WorldTidesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D4AD51DE48CB90008F318 /* WorldTidesRequest.swift */; };
-		647D4AFE1DE4A3620008F318 /* PazWorldTides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6468A3041DE42BA100D734A6 /* PazWorldTides.swift */; };
-		647D4AFF1DE4A3620008F318 /* TidalSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6468A3061DE42C3300D734A6 /* TidalSet.swift */; };
-		647D4B001DE4A3620008F318 /* WorldTidesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D4AD51DE48CB90008F318 /* WorldTidesRequest.swift */; };
-		647D4B011DE4A3620008F318 /* TidalHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D4AD11DE48C3F0008F318 /* TidalHeight.swift */; };
-		647D4B021DE4A3620008F318 /* TidalExtreme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647D4AD31DE48C490008F318 /* TidalExtreme.swift */; };
+		647C08C31DE5839A00691900 /* PazWorldTides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C08BE1DE5839A00691900 /* PazWorldTides.swift */; };
+		647C08C41DE5839A00691900 /* PazWorldTides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C08BE1DE5839A00691900 /* PazWorldTides.swift */; };
+		647C08C51DE5839A00691900 /* PazWorldTides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C08BE1DE5839A00691900 /* PazWorldTides.swift */; };
+		647C08C61DE5839A00691900 /* TidalExtreme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C08BF1DE5839A00691900 /* TidalExtreme.swift */; };
+		647C08C71DE5839A00691900 /* TidalExtreme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C08BF1DE5839A00691900 /* TidalExtreme.swift */; };
+		647C08C81DE5839A00691900 /* TidalExtreme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C08BF1DE5839A00691900 /* TidalExtreme.swift */; };
+		647C08C91DE5839A00691900 /* TidalHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C08C01DE5839A00691900 /* TidalHeight.swift */; };
+		647C08CA1DE5839A00691900 /* TidalHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C08C01DE5839A00691900 /* TidalHeight.swift */; };
+		647C08CB1DE5839A00691900 /* TidalHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C08C01DE5839A00691900 /* TidalHeight.swift */; };
+		647C08CC1DE5839A00691900 /* TidalSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C08C11DE5839A00691900 /* TidalSet.swift */; };
+		647C08CD1DE5839A00691900 /* TidalSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C08C11DE5839A00691900 /* TidalSet.swift */; };
+		647C08CE1DE5839A00691900 /* TidalSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C08C11DE5839A00691900 /* TidalSet.swift */; };
+		647C08CF1DE5839A00691900 /* WorldTidesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C08C21DE5839A00691900 /* WorldTidesRequest.swift */; };
+		647C08D01DE5839A00691900 /* WorldTidesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C08C21DE5839A00691900 /* WorldTidesRequest.swift */; };
+		647C08D11DE5839A00691900 /* WorldTidesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C08C21DE5839A00691900 /* WorldTidesRequest.swift */; };
 		647D4B041DE4A86D0008F318 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 647D4B031DE4A86D0008F318 /* Cartfile */; };
 /* End PBXBuildFile section */
 
@@ -38,12 +43,11 @@
 		6468A2F31DE42B6600D734A6 /* PazWorldTidesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PazWorldTidesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6468A2F81DE42B6600D734A6 /* PazWorldTidesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PazWorldTidesTests.swift; sourceTree = "<group>"; };
 		6468A2FA1DE42B6600D734A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6468A3041DE42BA100D734A6 /* PazWorldTides.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PazWorldTides.swift; sourceTree = "<group>"; };
-		6468A3061DE42C3300D734A6 /* TidalSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TidalSet.swift; sourceTree = "<group>"; };
-		647D4AD11DE48C3F0008F318 /* TidalHeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TidalHeight.swift; sourceTree = "<group>"; };
-		647D4AD31DE48C490008F318 /* TidalExtreme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TidalExtreme.swift; sourceTree = "<group>"; };
-		647D4AD51DE48CB90008F318 /* WorldTidesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldTidesRequest.swift; sourceTree = "<group>"; };
-		647D4ADF1DE49D2C0008F318 /* PazWorldTides */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PazWorldTides; sourceTree = SOURCE_ROOT; };
+		647C08BE1DE5839A00691900 /* PazWorldTides.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PazWorldTides.swift; sourceTree = "<group>"; };
+		647C08BF1DE5839A00691900 /* TidalExtreme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TidalExtreme.swift; sourceTree = "<group>"; };
+		647C08C01DE5839A00691900 /* TidalHeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TidalHeight.swift; sourceTree = "<group>"; };
+		647C08C11DE5839A00691900 /* TidalSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TidalSet.swift; sourceTree = "<group>"; };
+		647C08C21DE5839A00691900 /* WorldTidesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldTidesRequest.swift; sourceTree = "<group>"; };
 		647D4AF61DE49DAD0008F318 /* PazWorldTides.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PazWorldTides.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		647D4B031DE4A86D0008F318 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,12 +102,11 @@
 			isa = PBXGroup;
 			children = (
 				6468A2EE1DE42B6600D734A6 /* Info-iOS.plist */,
-				647D4ADF1DE49D2C0008F318 /* PazWorldTides */,
-				6468A3041DE42BA100D734A6 /* PazWorldTides.swift */,
-				6468A3061DE42C3300D734A6 /* TidalSet.swift */,
-				647D4AD51DE48CB90008F318 /* WorldTidesRequest.swift */,
-				647D4AD11DE48C3F0008F318 /* TidalHeight.swift */,
-				647D4AD31DE48C490008F318 /* TidalExtreme.swift */,
+				647C08BE1DE5839A00691900 /* PazWorldTides.swift */,
+				647C08BF1DE5839A00691900 /* TidalExtreme.swift */,
+				647C08C01DE5839A00691900 /* TidalHeight.swift */,
+				647C08C11DE5839A00691900 /* TidalSet.swift */,
+				647C08C21DE5839A00691900 /* WorldTidesRequest.swift */,
 			);
 			path = PazWorldTides;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 					};
 					647D4AF51DE49DAD0008F318 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -267,11 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				647D4AD21DE48C3F0008F318 /* TidalHeight.swift in Sources */,
-				647D4AD41DE48C490008F318 /* TidalExtreme.swift in Sources */,
-				647D4AD61DE48CB90008F318 /* WorldTidesRequest.swift in Sources */,
-				6468A3071DE42C3300D734A6 /* TidalSet.swift in Sources */,
-				6468A3051DE42BA100D734A6 /* PazWorldTides.swift in Sources */,
+				647C08C91DE5839A00691900 /* TidalHeight.swift in Sources */,
+				647C08C31DE5839A00691900 /* PazWorldTides.swift in Sources */,
+				647C08CF1DE5839A00691900 /* WorldTidesRequest.swift in Sources */,
+				647C08C61DE5839A00691900 /* TidalExtreme.swift in Sources */,
+				647C08CC1DE5839A00691900 /* TidalSet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +283,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				647C08C81DE5839A00691900 /* TidalExtreme.swift in Sources */,
+				647C08C51DE5839A00691900 /* PazWorldTides.swift in Sources */,
+				647C08D11DE5839A00691900 /* WorldTidesRequest.swift in Sources */,
+				647C08CE1DE5839A00691900 /* TidalSet.swift in Sources */,
 				6468A2F91DE42B6600D734A6 /* PazWorldTidesTests.swift in Sources */,
+				647C08CB1DE5839A00691900 /* TidalHeight.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,11 +296,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				647D4AFE1DE4A3620008F318 /* PazWorldTides.swift in Sources */,
-				647D4B021DE4A3620008F318 /* TidalExtreme.swift in Sources */,
-				647D4AFF1DE4A3620008F318 /* TidalSet.swift in Sources */,
-				647D4B001DE4A3620008F318 /* WorldTidesRequest.swift in Sources */,
-				647D4B011DE4A3620008F318 /* TidalHeight.swift in Sources */,
+				647C08CA1DE5839A00691900 /* TidalHeight.swift in Sources */,
+				647C08C41DE5839A00691900 /* PazWorldTides.swift in Sources */,
+				647C08D01DE5839A00691900 /* WorldTidesRequest.swift in Sources */,
+				647C08C71DE5839A00691900 /* TidalExtreme.swift in Sources */,
+				647C08CD1DE5839A00691900 /* TidalSet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +488,7 @@
 		647D4AFC1DE49DAD0008F318 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -495,6 +505,7 @@
 				PRODUCT_NAME = PazWorldTides;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -502,6 +513,7 @@
 		647D4AFD1DE49DAD0008F318 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
