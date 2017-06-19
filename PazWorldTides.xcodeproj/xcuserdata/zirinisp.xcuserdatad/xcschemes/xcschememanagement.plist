@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>PazWorldTides-iOSTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>PazWorldTidesTests-Mac.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -28,6 +33,36 @@
 			<true/>
 		</dict>
 		<key>644C206D1EF7AB7400228F6D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>645E815F1EF7F3C300E2782F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>645E81671EF7F3C300E2782F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>645E817A1EF7F57300E2782F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>645E81961EF7F7E300E2782F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>645E81A31EF7F7FF00E2782F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>645E81B01EF7F84100E2782F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -53,6 +88,46 @@
 			<true/>
 		</dict>
 		<key>647D4AF51DE49DAD0008F318</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>OBJ_27</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>OBJ_28</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>OBJ_34</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>OBJ_35</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>OBJ_47</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>OBJ_48</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>OBJ_56</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>OBJ_57</key>
 		<dict>
 			<key>primary</key>
 			<true/>

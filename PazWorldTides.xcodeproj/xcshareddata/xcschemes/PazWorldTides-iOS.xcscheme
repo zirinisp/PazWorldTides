@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6468A2E91DE42B6600D734A6"
+               BlueprintIdentifier = "645E81961EF7F7E300E2782F"
                BuildableName = "PazWorldTides.framework"
                BlueprintName = "PazWorldTides-iOS"
                ReferencedContainer = "container:PazWorldTides.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6468A2F21DE42B6600D734A6"
+               BlueprintIdentifier = "OBJ_57"
                BuildableName = "PazWorldTidesTests.xctest"
                BlueprintName = "PazWorldTidesTests"
                ReferencedContainer = "container:PazWorldTides.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6468A2E91DE42B6600D734A6"
+            BlueprintIdentifier = "645E81961EF7F7E300E2782F"
             BuildableName = "PazWorldTides.framework"
             BlueprintName = "PazWorldTides-iOS"
             ReferencedContainer = "container:PazWorldTides.xcodeproj">
@@ -64,7 +64,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6468A2E91DE42B6600D734A6"
+            BlueprintIdentifier = "645E81961EF7F7E300E2782F"
             BuildableName = "PazWorldTides.framework"
             BlueprintName = "PazWorldTides-iOS"
             ReferencedContainer = "container:PazWorldTides.xcodeproj">
@@ -82,7 +82,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6468A2E91DE42B6600D734A6"
+            BlueprintIdentifier = "645E81961EF7F7E300E2782F"
             BuildableName = "PazWorldTides.framework"
             BlueprintName = "PazWorldTides-iOS"
             ReferencedContainer = "container:PazWorldTides.xcodeproj">
