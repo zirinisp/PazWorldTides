@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		644C20711EF7AB7400228F6D /* PazWorldTidesTests_Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644C20701EF7AB7400228F6D /* PazWorldTidesTests_Mac.swift */; };
+		644C20731EF7AB7400228F6D /* PazWorldTides.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647D4AF61DE49DAD0008F318 /* PazWorldTides.framework */; };
+		644C20791EF7ABDD00228F6D /* PazWorldTides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C08BE1DE5839A00691900 /* PazWorldTides.swift */; };
+		644C207A1EF7ABDD00228F6D /* TidalExtreme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C08BF1DE5839A00691900 /* TidalExtreme.swift */; };
+		644C207B1EF7ABDD00228F6D /* TidalHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C08C01DE5839A00691900 /* TidalHeight.swift */; };
+		644C207C1EF7ABDD00228F6D /* TidalSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C08C11DE5839A00691900 /* TidalSet.swift */; };
+		644C207D1EF7ABDD00228F6D /* WorldTidesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C08C21DE5839A00691900 /* WorldTidesRequest.swift */; };
 		6468A2F41DE42B6600D734A6 /* PazWorldTides.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6468A2EA1DE42B6600D734A6 /* PazWorldTides.framework */; };
 		6468A2F91DE42B6600D734A6 /* PazWorldTidesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6468A2F81DE42B6600D734A6 /* PazWorldTidesTests.swift */; };
 		647C08C31DE5839A00691900 /* PazWorldTides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C08BE1DE5839A00691900 /* PazWorldTides.swift */; };
@@ -24,10 +31,16 @@
 		647C08CF1DE5839A00691900 /* WorldTidesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C08C21DE5839A00691900 /* WorldTidesRequest.swift */; };
 		647C08D01DE5839A00691900 /* WorldTidesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C08C21DE5839A00691900 /* WorldTidesRequest.swift */; };
 		647C08D11DE5839A00691900 /* WorldTidesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C08C21DE5839A00691900 /* WorldTidesRequest.swift */; };
-		647D4B041DE4A86D0008F318 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 647D4B031DE4A86D0008F318 /* Cartfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		644C20741EF7AB7400228F6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6468A2E11DE42B6600D734A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 647D4AF51DE49DAD0008F318;
+			remoteInfo = "PazWorldTides-Mac";
+		};
 		6468A2F51DE42B6600D734A6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6468A2E11DE42B6600D734A6 /* Project object */;
@@ -38,6 +51,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		644C206E1EF7AB7400228F6D /* PazWorldTidesTests-Mac.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PazWorldTidesTests-Mac.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		644C20701EF7AB7400228F6D /* PazWorldTidesTests_Mac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PazWorldTidesTests_Mac.swift; sourceTree = "<group>"; };
+		644C20721EF7AB7400228F6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6468A2EA1DE42B6600D734A6 /* PazWorldTides.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PazWorldTides.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6468A2EE1DE42B6600D734A6 /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		6468A2F31DE42B6600D734A6 /* PazWorldTidesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PazWorldTidesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +69,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		644C206B1EF7AB7400228F6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				644C20731EF7AB7400228F6D /* PazWorldTides.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6468A2E61DE42B6600D734A6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,12 +102,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		644C206F1EF7AB7400228F6D /* PazWorldTidesTests-Mac */ = {
+			isa = PBXGroup;
+			children = (
+				644C20701EF7AB7400228F6D /* PazWorldTidesTests_Mac.swift */,
+				644C20721EF7AB7400228F6D /* Info.plist */,
+			);
+			path = "PazWorldTidesTests-Mac";
+			sourceTree = "<group>";
+		};
 		6468A2E01DE42B6600D734A6 = {
 			isa = PBXGroup;
 			children = (
 				647D4B031DE4A86D0008F318 /* Cartfile */,
 				6468A2EC1DE42B6600D734A6 /* PazWorldTides */,
 				6468A2F71DE42B6600D734A6 /* PazWorldTidesTests */,
+				644C206F1EF7AB7400228F6D /* PazWorldTidesTests-Mac */,
 				6468A2EB1DE42B6600D734A6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +128,7 @@
 				6468A2EA1DE42B6600D734A6 /* PazWorldTides.framework */,
 				6468A2F31DE42B6600D734A6 /* PazWorldTidesTests.xctest */,
 				647D4AF61DE49DAD0008F318 /* PazWorldTides.framework */,
+				644C206E1EF7AB7400228F6D /* PazWorldTidesTests-Mac.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +175,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		644C206D1EF7AB7400228F6D /* PazWorldTidesTests-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 644C20761EF7AB7400228F6D /* Build configuration list for PBXNativeTarget "PazWorldTidesTests-Mac" */;
+			buildPhases = (
+				644C206A1EF7AB7400228F6D /* Sources */,
+				644C206B1EF7AB7400228F6D /* Frameworks */,
+				644C206C1EF7AB7400228F6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				644C20751EF7AB7400228F6D /* PBXTargetDependency */,
+			);
+			name = "PazWorldTidesTests-Mac";
+			productName = "PazWorldTidesTests-Mac";
+			productReference = 644C206E1EF7AB7400228F6D /* PazWorldTidesTests-Mac.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		6468A2E91DE42B6600D734A6 /* PazWorldTides-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6468A2FE1DE42B6600D734A6 /* Build configuration list for PBXNativeTarget "PazWorldTides-iOS" */;
@@ -200,10 +253,15 @@
 		6468A2E11DE42B6600D734A6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0810;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "paz-labs";
 				TargetAttributes = {
+					644C206D1EF7AB7400228F6D = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = XZ582BS8LF;
+						ProvisioningStyle = Automatic;
+					};
 					6468A2E91DE42B6600D734A6 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = XZ582BS8LF;
@@ -237,16 +295,23 @@
 				6468A2E91DE42B6600D734A6 /* PazWorldTides-iOS */,
 				647D4AF51DE49DAD0008F318 /* PazWorldTides-Mac */,
 				6468A2F21DE42B6600D734A6 /* PazWorldTidesTests */,
+				644C206D1EF7AB7400228F6D /* PazWorldTidesTests-Mac */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		644C206C1EF7AB7400228F6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6468A2E81DE42B6600D734A6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				647D4B041DE4A86D0008F318 /* Cartfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +332,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		644C206A1EF7AB7400228F6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				644C207A1EF7ABDD00228F6D /* TidalExtreme.swift in Sources */,
+				644C20791EF7ABDD00228F6D /* PazWorldTides.swift in Sources */,
+				644C207D1EF7ABDD00228F6D /* WorldTidesRequest.swift in Sources */,
+				644C207C1EF7ABDD00228F6D /* TidalSet.swift in Sources */,
+				644C20711EF7AB7400228F6D /* PazWorldTidesTests_Mac.swift in Sources */,
+				644C207B1EF7ABDD00228F6D /* TidalHeight.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6468A2E51DE42B6600D734A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -307,6 +385,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		644C20751EF7AB7400228F6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 647D4AF51DE49DAD0008F318 /* PazWorldTides-Mac */;
+			targetProxy = 644C20741EF7AB7400228F6D /* PBXContainerItemProxy */;
+		};
 		6468A2F61DE42B6600D734A6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6468A2E91DE42B6600D734A6 /* PazWorldTides-iOS */;
@@ -315,6 +398,46 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		644C20771EF7AB7400228F6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XZ582BS8LF;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/Mac";
+				INFOPLIST_FILE = "PazWorldTidesTests-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks $(PROJECT_DIR)/Carthage/Build/Mac";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paz-labs.PazWorldTidesTests-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		644C20781EF7AB7400228F6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XZ582BS8LF;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/Mac";
+				INFOPLIST_FILE = "PazWorldTidesTests-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks $(PROJECT_DIR)/Carthage/Build/Mac";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paz-labs.PazWorldTidesTests-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		6468A2FC1DE42B6600D734A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -537,6 +660,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		644C20761EF7AB7400228F6D /* Build configuration list for PBXNativeTarget "PazWorldTidesTests-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				644C20771EF7AB7400228F6D /* Debug */,
+				644C20781EF7AB7400228F6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		6468A2E41DE42B6600D734A6 /* Build configuration list for PBXProject "PazWorldTides" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
