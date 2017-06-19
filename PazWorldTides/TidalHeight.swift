@@ -53,6 +53,18 @@ public class TidalHeight {
         self.init(dt: dt, date: date, height: height)
     }
     
+    public func dictionaryValue() -> [String: JSON] {
+        var dictionary = [String: JSON]()
+        dictionary[Keys.date.rawValue] = JSON(TidalHeight.dateFormatter.string(from: self.date))
+        dictionary[Keys.height.rawValue] = JSON(self.height)
+        dictionary[Keys.dt.rawValue] = JSON(self.dt)
+        return dictionary
+    }
+    
+    public func json() -> JSON {
+        return JSON(self.dictionaryValue())
+    }
+    
     public class func arrayFrom(heightsJsonArray: [JSON]) -> [TidalHeight] {
         var tidalArray = [TidalHeight]()
         for json in heightsJsonArray {
@@ -64,5 +76,13 @@ public class TidalHeight {
         }
         return tidalArray
     }
+}
+
+func == (lhs: TidalHeight, rhs: TidalHeight) -> Bool {
+    return lhs.date == rhs.date && lhs.dt == rhs.dt && lhs.height == rhs.height
+}
+
+func != (lhs: TidalHeight, rhs: TidalHeight) -> Bool {
+    return !(lhs == rhs)
 }
 

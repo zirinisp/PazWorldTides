@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 
 public class TidalExtreme: TidalHeight {
-    public enum TidalType {
+    public enum TidalType: String {
         case low
         case high
         
@@ -49,7 +49,13 @@ public class TidalExtreme: TidalHeight {
         }
         self.init(dt: dt, date: date, height: height, type: type)
     }
-    
+
+    public override func dictionaryValue() -> [String: JSON] {
+        var dictionary = super.dictionaryValue()
+        dictionary[Keys.type.rawValue] = JSON(self.type.rawValue)
+        return dictionary
+    }
+
     public class func arrayFrom(extremesJsonArray: [JSON]) -> [TidalExtreme] {
         var tidalArray = [TidalExtreme]()
         for json in extremesJsonArray {
@@ -62,4 +68,12 @@ public class TidalExtreme: TidalHeight {
         return tidalArray
     }
     
+}
+
+func == (lhs: TidalExtreme, rhs: TidalExtreme) -> Bool {
+    return lhs.date == rhs.date && lhs.dt == rhs.dt && lhs.height == rhs.height && lhs.type == rhs.type
+}
+
+func != (lhs: TidalExtreme, rhs: TidalExtreme) -> Bool {
+    return !(lhs == rhs)
 }

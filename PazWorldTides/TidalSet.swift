@@ -59,12 +59,8 @@ public class TidalSet {
             return nil
         }
         let responseCoordinate = CLLocationCoordinate2D(latitude: lat, longitude: lon)
-        guard let atlas = json[Keys.atlas.rawValue].string else {
-            return nil
-        }
-        guard let copyright = json[Keys.copyright.rawValue].string else {
-            return nil
-        }
+        let atlas = json[Keys.atlas.rawValue].string
+        let copyright = json[Keys.copyright.rawValue].string
         var heightsArray: [TidalHeight]?
         if let heightsJsonArray = json[Keys.heights.rawValue].array {
             heightsArray = TidalHeight.arrayFrom(heightsJsonArray: heightsJsonArray)
@@ -101,6 +97,43 @@ public class TidalSet {
         }
         return startDate
     }()
+    
+    public func dictionaryValue() -> [String: JSON] {
+        var dictionary = [String: JSON]()
+        dictionary[Keys.status.rawValue] = JSON(self.status)
+        dictionary[Keys.callCount.rawValue] = JSON(self.callCount)
+        dictionary[Keys.requestLon.rawValue] = JSON(self.requestCoordinate.longitude)
+        dictionary[Keys.requestLat.rawValue] = JSON(self.requestCoordinate.latitude)
+        dictionary[Keys.responseLon.rawValue] = JSON(self.coordinate.longitude)
+        dictionary[Keys.responseLat.rawValue] = JSON(self.coordinate.latitude)
+        if let copyright = self.copyright {
+            dictionary[Keys.copyright.rawValue] = JSON(copyright)
+        }
+        if let atlas = self.atlas {
+            dictionary[Keys.atlas.rawValue] = JSON(atlas)
+        }
+        
+        if let heights = self.heights {
+            var array = [JSON]()
+            for height in heights {
+                array.append(height.json())
+            }
+            dictionary[Keys.heights.rawValue] = JSON(array)
+        }
+        if let extremes = self.extremes {
+            var array = [JSON]()
+            for extreme in extremes {
+                array.append(extreme.json())
+            }
+            dictionary[Keys.extremes.rawValue] = JSON(array)
+        }
+        return dictionary
+    }
+    
+    public func json() -> JSON {
+        return JSON(self.dictionaryValue())
+    }
+    
 }
 
 extension JSON {
