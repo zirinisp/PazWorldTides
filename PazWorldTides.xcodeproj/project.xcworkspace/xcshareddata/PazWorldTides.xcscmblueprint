@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1874A86C86E4165FB1E7C8B98B57B83FBF057CD0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C861FC00CEE0F6A6BE81FCFF6785FAA78C58EBB3" : 9223372036854775807,
+    "1874A86C86E4165FB1E7C8B98B57B83FBF057CD0" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F83CC9D4-F8F7-4855-A196-AD9AF60AAB06",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C861FC00CEE0F6A6BE81FCFF6785FAA78C58EBB3" : "PazWorldTides\/.build\/checkouts\/SwiftyJSON.git-3043514560129222422\/",
+    "1874A86C86E4165FB1E7C8B98B57B83FBF057CD0" : "PazWorldTides\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PazWorldTides",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PazWorldTides.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zirinisp\/PazWorldTides.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1874A86C86E4165FB1E7C8B98B57B83FBF057CD0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/zirinisp\/Documents\/xcode\/PazFrameworks\/PazWorldTides\/.build\/repositories\/SwiftyJSON.git-3043514560129222422",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C861FC00CEE0F6A6BE81FCFF6785FAA78C58EBB3"
+    }
+  ]
+}
