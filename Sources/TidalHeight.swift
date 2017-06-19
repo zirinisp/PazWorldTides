@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-public class TidalHeight {
+open class TidalHeight {
     /// Date/Time of this extreme (in seconds since the unix epoch).
     open fileprivate (set) var dt: Int
     /// Date/Time of this extreme (in ISO 8601 standard date and time format, e.g.: 2016-11-22T07:15+0000 ).

@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-public class TidalExtreme: TidalHeight {
+open class TidalExtreme: TidalHeight {
     public enum TidalType: String {
         case low
         case high

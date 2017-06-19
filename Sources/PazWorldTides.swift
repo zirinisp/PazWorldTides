@@ -19,7 +19,7 @@ public enum PazWorldTidesResult<T> {
     case error(error: PazWorldTides.RequestError)
 }
 
-public class PazWorldTides {
+open class PazWorldTides {
     
     public enum UpdateNotification {
         case requestSent

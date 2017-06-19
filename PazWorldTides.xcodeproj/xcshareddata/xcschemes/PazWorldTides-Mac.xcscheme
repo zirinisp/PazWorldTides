@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "645E81B01EF7F84100E2782F"
-               BuildableName = "PazWorldTides-Mac.framework"
+               BuildableName = "PazWorldTides.framework"
                BlueprintName = "PazWorldTides-Mac"
                ReferencedContainer = "container:PazWorldTides.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "645E81B01EF7F84100E2782F"
-            BuildableName = "PazWorldTides-Mac.framework"
+            BuildableName = "PazWorldTides.framework"
             BlueprintName = "PazWorldTides-Mac"
             ReferencedContainer = "container:PazWorldTides.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "645E81B01EF7F84100E2782F"
-            BuildableName = "PazWorldTides-Mac.framework"
+            BuildableName = "PazWorldTides.framework"
             BlueprintName = "PazWorldTides-Mac"
             ReferencedContainer = "container:PazWorldTides.xcodeproj">
          </BuildableReference>

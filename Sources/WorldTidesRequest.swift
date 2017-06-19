@@ -11,7 +11,7 @@ import Foundation
     import CoreLocation
 #endif
 
-public class WorldTidesRequest {
+open class WorldTidesRequest {
     
     public enum RequestType {
         case heights

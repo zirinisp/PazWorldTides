@@ -12,7 +12,7 @@ import CoreLocation
 #endif
 import SwiftyJSON
 
-public class TidalSet {
+open class TidalSet {
     open fileprivate (set) var status: Int
     open fileprivate (set) var callCount: Int
     open fileprivate (set) var latitude: Double
