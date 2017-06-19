@@ -7,7 +7,9 @@
 //
 
 import Foundation
-import CoreLocation
+#if os(iOS)
+    import CoreLocation
+#endif
 import SwiftyJSON
 
 public typealias TidalSetCompletion = (PazWorldTidesResult<TidalSet>) -> Void
@@ -48,13 +50,21 @@ public class PazWorldTides {
     init(apiKey: String) {
         self.apiKey = apiKey
     }
-    
+    #if os(iOS)
     func tidalSetFor(coordinate: CLLocationCoordinate2D, requestTypes: [WorldTidesRequest.RequestType] = [.heights, .extremes], length: Int = 60*60*24*14, maxCalls: Int = 5, completion: @escaping TidalSetCompletion) {
         guard let request = WorldTidesRequest(apiKey: apiKey, coordinate: coordinate, requestTypes: requestTypes, length: length, maxCalls: maxCalls) else {
             return completion(.error(error: .unknown))
         }
         self.tidalSetFrom(request: request, completion: completion)
     }
+    #else
+    func tidalSetFor(latitude: Double, longitude: Double, requestTypes: [WorldTidesRequest.RequestType] = [.heights, .extremes], length: Int = 60*60*24*14, maxCalls: Int = 5, completion: @escaping TidalSetCompletion) {
+        guard let request = WorldTidesRequest(apiKey: apiKey, latitude: latitude, longitude: longitude, requestTypes: requestTypes, length: length, maxCalls: maxCalls) else {
+            return completion(.error(error: .unknown))
+        }
+        self.tidalSetFrom(request: request, completion: completion)
+    }
+    #endif
     
     func tidalSetFrom(request: WorldTidesRequest, completion: @escaping TidalSetCompletion) {
         guard let url: URL = URL(string: request.urlString)  else {

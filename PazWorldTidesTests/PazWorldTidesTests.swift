@@ -32,7 +32,7 @@ class PazWorldTidesTests: XCTestCase {
         self.worldTides.tidalSetFor(coordinate: CLLocationCoordinate2D(latitude: 37.82, longitude: 23.77), completion: { (result) in
             switch result {
             case .success(let tidalSet):
-                print("Got result heights: \(tidalSet.heights?.count) extremes: \(tidalSet.extremes?.count)")
+                print("Got result heights: \(tidalSet.heights?.count ?? 0) extremes: \(tidalSet.extremes?.count ?? 0)")
                 XCTAssert((tidalSet.heights?.count ?? 0) > 0)
                 XCTAssert((tidalSet.extremes?.count ?? 0) > 0)
             case .error(let error):

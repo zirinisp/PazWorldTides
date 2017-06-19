@@ -7,14 +7,18 @@
 //
 
 import Foundation
+#if os(iOS)
 import CoreLocation
+#endif
 import SwiftyJSON
 
 public class TidalSet {
     open fileprivate (set) var status: Int
     open fileprivate (set) var callCount: Int
-    open fileprivate (set) var coordinate: CLLocationCoordinate2D
-    open fileprivate (set) var requestCoordinate: CLLocationCoordinate2D
+    open fileprivate (set) var latitude: Double
+    open fileprivate (set) var longitude: Double
+    open fileprivate (set) var requestLatitude: Double
+    open fileprivate (set) var requestLongitude: Double
     open fileprivate (set) var atlas: String?
     open fileprivate (set) var copyright: String?
     open fileprivate (set) var heights: [TidalHeight]?
@@ -35,11 +39,25 @@ public class TidalSet {
         case timestamp = "timestamp"
     }
     
-    public init(status: Int, callCount: Int, coordinate: CLLocationCoordinate2D, requestCoordinate: CLLocationCoordinate2D, atlas: String?, copyright: String?, heights: [TidalHeight]?, extremes: [TidalExtreme]?, timestamp: Date = Date()) {
+    #if os(iOS)
+    public convenience init(status: Int, callCount: Int, coordinate: CLLocationCoordinate2D, requestCoordinate: CLLocationCoordinate2D, atlas: String?, copyright: String?, heights: [TidalHeight]?, extremes: [TidalExtreme]?, timestamp: Date = Date()) {
+        self.init(status: status, callCount: callCount, latitude: coordinate.latitude, longitude: coordinate.longitude, requestLatitude: requestCoordinate.latitude, requestLongitude: requestCoordinate.longitude, atlas: atlas, copyright: copyright, heights: heights, extremes: extremes, timestamp: timestamp)
+    }
+    public var coordinate: CLLocationCoordinate2D {
+        return CLLocationCoordinate2D(latitude: self.latitude, longitude: self.longitude)
+    }
+    public var requestCoordinate: CLLocationCoordinate2D {
+        return CLLocationCoordinate2D(latitude: self.requestLatitude, longitude: self.requestLongitude)
+    }
+    #endif
+
+    public init(status: Int, callCount: Int, latitude: Double, longitude: Double, requestLatitude: Double, requestLongitude: Double, atlas: String?, copyright: String?, heights: [TidalHeight]?, extremes: [TidalExtreme]?, timestamp: Date = Date()) {
         self.status = status
         self.callCount = callCount
-        self.coordinate = coordinate
-        self.requestCoordinate = requestCoordinate
+        self.latitude = latitude
+        self.longitude = longitude
+        self.requestLatitude = requestLatitude
+        self.requestLongitude = requestLongitude
         self.atlas = atlas
         self.copyright = copyright
         self.heights = heights
@@ -54,11 +72,9 @@ public class TidalSet {
         guard let requestLon = json[Keys.requestLon.rawValue].doublePaz, let requestLat = json[Keys.requestLat.rawValue].doublePaz  else {
             return nil
         }
-        let requestCoordinate = CLLocationCoordinate2D(latitude: requestLat, longitude: requestLon)
         guard let lon = json[Keys.responseLon.rawValue].doublePaz, let lat = json[Keys.responseLat.rawValue].doublePaz  else {
             return nil
         }
-        let responseCoordinate = CLLocationCoordinate2D(latitude: lat, longitude: lon)
         let atlas = json[Keys.atlas.rawValue].string
         let copyright = json[Keys.copyright.rawValue].string
         var heightsArray: [TidalHeight]?
@@ -69,7 +85,7 @@ public class TidalSet {
         if let extremesJsonArray = json[Keys.extremes.rawValue].array {
             extremesArray = TidalExtreme.arrayFrom(extremesJsonArray: extremesJsonArray)
         }
-        self.init(status: status, callCount: callCount, coordinate: responseCoordinate, requestCoordinate: requestCoordinate, atlas: atlas, copyright: copyright, heights: heightsArray, extremes: extremesArray)
+        self.init(status: status, callCount: callCount, latitude: lat, longitude: lon, requestLatitude: requestLat, requestLongitude: requestLon, atlas: atlas, copyright: copyright, heights: heightsArray, extremes: extremesArray)
     }
     
     lazy var startDate: Date? = {
@@ -102,10 +118,10 @@ public class TidalSet {
         var dictionary = [String: JSON]()
         dictionary[Keys.status.rawValue] = JSON(self.status)
         dictionary[Keys.callCount.rawValue] = JSON(self.callCount)
-        dictionary[Keys.requestLon.rawValue] = JSON(self.requestCoordinate.longitude)
-        dictionary[Keys.requestLat.rawValue] = JSON(self.requestCoordinate.latitude)
-        dictionary[Keys.responseLon.rawValue] = JSON(self.coordinate.longitude)
-        dictionary[Keys.responseLat.rawValue] = JSON(self.coordinate.latitude)
+        dictionary[Keys.requestLon.rawValue] = JSON(self.requestLongitude)
+        dictionary[Keys.requestLat.rawValue] = JSON(self.requestLatitude)
+        dictionary[Keys.responseLon.rawValue] = JSON(self.longitude)
+        dictionary[Keys.responseLat.rawValue] = JSON(self.latitude)
         if let copyright = self.copyright {
             dictionary[Keys.copyright.rawValue] = JSON(copyright)
         }
