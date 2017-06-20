@@ -45,6 +45,7 @@
 		645E81971EF7F7E300E2782F /* PazWorldTides.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PazWorldTides.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		645E81B11EF7F84100E2782F /* PazWorldTides.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PazWorldTides.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		645E825B1EF915E600E2782F /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		645E82601EF91AC400E2782F /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
 		OBJ_10 /* TidalHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TidalHeight.swift; sourceTree = "<group>"; };
 		OBJ_11 /* TidalSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TidalSet.swift; sourceTree = "<group>"; };
 		OBJ_12 /* WorldTidesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTidesRequest.swift; sourceTree = "<group>"; };
@@ -161,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				645E825B1EF915E600E2782F /* Cartfile */,
+				645E82601EF91AC400E2782F /* Cartfile.resolved */,
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_13 /* Tests */,
@@ -458,7 +460,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Sources/Info-Ios.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paz-labs.PazWorldTides-iOS";
@@ -517,7 +519,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Sources/Info-Ios.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paz-labs.PazWorldTides-iOS";

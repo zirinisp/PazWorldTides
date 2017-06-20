@@ -165,11 +165,11 @@ extension JSON {
 }
 
 extension Date {
-    public func isAfter(_ date: Date) -> Bool{
+    internal func isAfter(_ date: Date) -> Bool{
         return (self.compare(date as Date) == ComparisonResult.orderedDescending)
     }
     
-    public func isBefore(_ date: Date) -> Bool{
+    internal func isBefore(_ date: Date) -> Bool{
         return (self.compare(date as Date) == ComparisonResult.orderedAscending)
     }
     
