@@ -21,16 +21,6 @@ public enum PazWorldTidesResult<T> {
 
 open class PazWorldTides {
     
-    public enum UpdateNotification {
-        case requestSent
-        
-        var name: Notification.Name {
-            switch self {
-            case .requestSent: return Notification.Name("PazWorldTides.requestSent")
-            }
-        }
-    }
-    
     public enum RequestError: Error {
         case noResult
         case notInitialized
