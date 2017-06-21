@@ -40,11 +40,12 @@ open class TidalHeight {
         return dateFormatter
     }()
     
-    public convenience init?(json: JSON) {
+    public convenience init?(json: JSON, dateFormatter: DateFormatter? = nil) {
         guard let dateString = json[Keys.date.rawValue].string else {
             return nil
         }
-        guard let date: Date = TidalHeight.dateFormatter.date(from: dateString) else {
+        let formatter = dateFormatter ?? TidalHeight.dateFormatter
+        guard let date: Date = formatter.date(from: dateString) else {
             return nil
         }
         guard let height: Double = json[Keys.height.rawValue].double, let dt: Int = json[Keys.dt.rawValue].int else {
@@ -66,10 +67,10 @@ open class TidalHeight {
         return JSON(self.dictionaryValue())
     }
     
-    public class func arrayFrom(heightsJsonArray: [JSON]) -> [TidalHeight] {
+    public class func arrayFrom(heightsJsonArray: [JSON], dateFormatter: DateFormatter? = nil) -> [TidalHeight] {
         var tidalArray = [TidalHeight]()
         for json in heightsJsonArray {
-            if let tidalHeight = TidalHeight(json: json) {
+            if let tidalHeight = TidalHeight(json: json, dateFormatter: dateFormatter) {
                 tidalArray.append(tidalHeight)
             } else {
                 print("error could not create tidal height from dictionary:\n\(json)")

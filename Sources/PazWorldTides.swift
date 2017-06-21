@@ -35,6 +35,17 @@ open class PazWorldTides {
     
     var apiKey: String
 
+    /// This is the server date formatter. Please do not change the dateFormat as it is the one used by worldtides.info
+    static var dateFormatter: DateFormatter = {
+        let dateFormatter: DateFormatter = DateFormatter()
+        #if !os(Linux)
+            DateFormatter.defaultFormatterBehavior = DateFormatter.Behavior.default
+        #endif
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mmZZZ"
+        return dateFormatter
+    }()
+
     public init(apiKey: String) {
         self.apiKey = apiKey
     }

@@ -34,14 +34,15 @@ open class TidalExtreme: TidalHeight {
         super.init(dt: dt, date: date, height: height)
     }
     
-    public convenience init?(json: JSON) {
+    public convenience init?(json: JSON, dateFormatter: DateFormatter? = nil) {
         guard let typeString = json[Keys.type.rawValue].string, let type = TidalType(string: typeString) else {
             return nil
         }
         guard let dateString = json[Keys.date.rawValue].string else {
             return nil
         }
-        guard let date: Date = TidalHeight.dateFormatter.date(from: dateString) else {
+        let formatter = dateFormatter ?? TidalHeight.dateFormatter
+        guard let date: Date = formatter.date(from: dateString) else {
             return nil
         }
         guard let height: Double = json[Keys.height.rawValue].double, let dt: Int = json[Keys.dt.rawValue].int else {
@@ -56,10 +57,10 @@ open class TidalExtreme: TidalHeight {
         return dictionary
     }
 
-    public class func arrayFrom(extremesJsonArray: [JSON]) -> [TidalExtreme] {
+    public class func arrayFrom(extremesJsonArray: [JSON], dateFormatter: DateFormatter? = nil) -> [TidalExtreme] {
         var tidalArray = [TidalExtreme]()
         for json in extremesJsonArray {
-            if let tidalHeight = TidalExtreme(json: json) {
+            if let tidalHeight = TidalExtreme(json: json, dateFormatter: dateFormatter) {
                 tidalArray.append(tidalHeight)
             } else {
                 print("error could not create tidal extreme from dictionary:\n\(json)")

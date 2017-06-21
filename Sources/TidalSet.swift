@@ -65,7 +65,7 @@ open class TidalSet {
         self.timestamp = timestamp
     }
 
-    public convenience init?(json: JSON) {
+    public convenience init?(json: JSON, dateFormatter: DateFormatter? = nil) {
         guard let status = json[Keys.status.rawValue].int, let callCount = json[Keys.callCount.rawValue].int else {
             return nil
         }
@@ -79,11 +79,11 @@ open class TidalSet {
         let copyright = json[Keys.copyright.rawValue].string
         var heightsArray: [TidalHeight]?
         if let heightsJsonArray = json[Keys.heights.rawValue].array {
-            heightsArray = TidalHeight.arrayFrom(heightsJsonArray: heightsJsonArray)
+            heightsArray = TidalHeight.arrayFrom(heightsJsonArray: heightsJsonArray, dateFormatter: dateFormatter)
         }
         var extremesArray: [TidalExtreme]?
         if let extremesJsonArray = json[Keys.extremes.rawValue].array {
-            extremesArray = TidalExtreme.arrayFrom(extremesJsonArray: extremesJsonArray)
+            extremesArray = TidalExtreme.arrayFrom(extremesJsonArray: extremesJsonArray, dateFormatter: dateFormatter)
         }
         self.init(status: status, callCount: callCount, latitude: lat, longitude: lon, requestLatitude: requestLat, requestLongitude: requestLon, atlas: atlas, copyright: copyright, heights: heightsArray, extremes: extremesArray)
     }
