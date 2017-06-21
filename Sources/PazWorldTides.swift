@@ -69,7 +69,7 @@ open class PazWorldTides {
         let task = self.urlSession.dataTask(with: url) { (data, response, error) in
             if let result = data {
                 let json = JSON(data: result)
-                guard let tidalSet = TidalSet(json: json) else {
+                guard let tidalSet = TidalSet(json: json, dateFormatter: PazWorldTides.dateFormatter) else {
                     return completion(.error(error: .jSonError(error: nil)))
                 }
                 return completion(.success(tidalSet))
@@ -95,7 +95,7 @@ open class PazWorldTides {
         request.response({ (request, response, data, error) in
             if let result = data {
                 let json = JSON(data: result)
-                guard let tidalSet = TidalSet(json: json) else {
+                guard let tidalSet = TidalSet(json: json, dateFormatter: PazWorldTides.dateFormatter) else {
                     return completion(.error(error: .jSonError(error: nil)))
                 }
                 return completion(.success(tidalSet))
