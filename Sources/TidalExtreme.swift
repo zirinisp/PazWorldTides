@@ -50,7 +50,7 @@ open class TidalExtreme: TidalHeight {
         self.init(dt: dt, date: date, height: height, type: type)
     }
 
-    public override func dictionaryValue() -> [String: JSON] {
+    public override func dictionaryValue(dateFormatter: DateFormatter? = nil) -> [String: JSON] {
         var dictionary = super.dictionaryValue()
         dictionary[Keys.type.rawValue] = JSON(self.type.rawValue)
         return dictionary

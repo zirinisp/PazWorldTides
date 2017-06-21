@@ -53,15 +53,16 @@ open class TidalHeight {
         self.init(dt: dt, date: date, height: height)
     }
     
-    public func dictionaryValue() -> [String: JSON] {
+    public func dictionaryValue(dateFormatter: DateFormatter? = nil) -> [String: JSON] {
         var dictionary = [String: JSON]()
-        dictionary[Keys.date.rawValue] = JSON(TidalHeight.dateFormatter.string(from: self.date))
+        let formatter = dateFormatter ?? TidalHeight.dateFormatter
+        dictionary[Keys.date.rawValue] = JSON(formatter.string(from: self.date))
         dictionary[Keys.height.rawValue] = JSON(self.height)
         dictionary[Keys.dt.rawValue] = JSON(self.dt)
         return dictionary
     }
     
-    public func json() -> JSON {
+    public func json(dateFormatter: DateFormatter? = nil) -> JSON {
         return JSON(self.dictionaryValue())
     }
     
