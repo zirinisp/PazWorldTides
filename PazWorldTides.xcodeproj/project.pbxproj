@@ -51,7 +51,6 @@
 		OBJ_12 /* WorldTidesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTidesRequest.swift; sourceTree = "<group>"; };
 		OBJ_15 /* PazWorldTidesiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PazWorldTidesiOSTests.swift; sourceTree = "<group>"; };
 		OBJ_17 /* PazWorldTidesMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PazWorldTidesMacTests.swift; sourceTree = "<group>"; };
-		OBJ_18 /* Carthage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Carthage; sourceTree = SOURCE_ROOT; };
 		OBJ_21 /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		OBJ_23 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_25 /* PazWorldTidesiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = PazWorldTidesiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,7 +165,6 @@
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_13 /* Tests */,
-				OBJ_18 /* Carthage */,
 				OBJ_19 /* Dependencies */,
 				OBJ_22 /* Products */,
 			);
