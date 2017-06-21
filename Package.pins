@@ -2,10 +2,46 @@
   "autoPin": true,
   "pins": [
     {
+      "package": "CCurl",
+      "reason": null,
+      "repositoryURL": "https://github.com/IBM-Swift/CCurl.git",
+      "version": "0.2.5"
+    },
+    {
+      "package": "Kitura-net",
+      "reason": null,
+      "repositoryURL": "https://github.com/IBM-Swift/Kitura-net.git",
+      "version": "1.7.11"
+    },
+    {
+      "package": "KituraRequest",
+      "reason": null,
+      "repositoryURL": "https://github.com/IBM-Swift/Kitura-Request.git",
+      "version": "0.8.1"
+    },
+    {
+      "package": "LoggerAPI",
+      "reason": null,
+      "repositoryURL": "https://github.com/IBM-Swift/LoggerAPI.git",
+      "version": "1.7.0"
+    },
+    {
+      "package": "SSLService",
+      "reason": null,
+      "repositoryURL": "https://github.com/IBM-Swift/BlueSSLService.git",
+      "version": "0.12.44"
+    },
+    {
+      "package": "Socket",
+      "reason": null,
+      "repositoryURL": "https://github.com/IBM-Swift/BlueSocket.git",
+      "version": "0.12.53"
+    },
+    {
       "package": "SwiftyJSON",
       "reason": null,
-      "repositoryURL": "https://github.com/SwiftyJSON/SwiftyJSON.git",
-      "version": "3.1.4"
+      "repositoryURL": "https://github.com/IBM-Swift/SwiftyJSON.git",
+      "version": "16.0.1"
     }
   ],
   "version": 1
