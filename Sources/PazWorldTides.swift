@@ -26,7 +26,8 @@ open class PazWorldTides {
         
         var name: Notification.Name {
             switch self {
-            case .requestSent: return Notification.Name("PazWorldTides.requestSent")
+            case .requestSent:
+                return Notification.Name("PazWorldTides.requestSent")
             }
         }
     }

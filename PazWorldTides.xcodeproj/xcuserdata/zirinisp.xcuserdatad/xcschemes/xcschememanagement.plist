@@ -112,6 +112,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>OBJ_36</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>OBJ_47</key>
 		<dict>
 			<key>primary</key>
@@ -122,12 +127,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>OBJ_49</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>OBJ_56</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>OBJ_57</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>OBJ_58</key>
 		<dict>
 			<key>primary</key>
 			<true/>
