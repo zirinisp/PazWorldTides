@@ -30,7 +30,7 @@ open class TidalHeight {
         case type = "type"
     }
     
-    static var dateFormatter: DateFormatter = {
+    open static var dateFormatter: DateFormatter = {
         let dateFormatter: DateFormatter = DateFormatter()
         #if !os(Linux)
             DateFormatter.defaultFormatterBehavior = DateFormatter.Behavior.default
