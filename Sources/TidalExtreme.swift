@@ -45,7 +45,7 @@ open class TidalExtreme: TidalHeight {
         guard let date: Date = formatter.date(from: dateString) else {
             return nil
         }
-        guard let height: Double = json[Keys.height.rawValue].double, let dt: Int = json[Keys.dt.rawValue].int else {
+        guard let height: Double = json[Keys.height.rawValue].doublePaz, let dt: Int = json[Keys.dt.rawValue].int else {
             return nil
         }
         self.init(dt: dt, date: date, height: height, type: type)

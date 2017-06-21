@@ -48,7 +48,7 @@ open class TidalHeight {
         guard let date: Date = formatter.date(from: dateString) else {
             return nil
         }
-        guard let height: Double = json[Keys.height.rawValue].double, let dt: Int = json[Keys.dt.rawValue].int else {
+        guard let height: Double = json[Keys.height.rawValue].doublePaz, let dt: Int = json[Keys.dt.rawValue].int else {
             return nil
         }
         self.init(dt: dt, date: date, height: height)
@@ -58,7 +58,8 @@ open class TidalHeight {
         var dictionary = [String: JSON]()
         let formatter = dateFormatter ?? TidalHeight.dateFormatter
         dictionary[Keys.date.rawValue] = JSON(formatter.string(from: self.date))
-        dictionary[Keys.height.rawValue] = JSON(self.height)
+        // We convert to string as there is a problem with MongoKitten and Cheetah and double numbers are not converted correctly
+        dictionary[Keys.height.rawValue] = JSON("\(self.height)")
         dictionary[Keys.dt.rawValue] = JSON(self.dt)
         return dictionary
     }
