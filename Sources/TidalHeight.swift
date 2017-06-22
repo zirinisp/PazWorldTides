@@ -59,7 +59,7 @@ open class TidalHeight {
         let formatter = dateFormatter ?? TidalHeight.dateFormatter
         dictionary[Keys.date.rawValue] = JSON(formatter.string(from: self.date))
         // We convert to string as there is a problem with MongoKitten and Cheetah and double numbers are not converted correctly
-        dictionary[Keys.height.rawValue] = JSON("\(self.height)")
+        dictionary[Keys.height.rawValue] = JSON(self.height)
         dictionary[Keys.dt.rawValue] = JSON(self.dt)
         return dictionary
     }
