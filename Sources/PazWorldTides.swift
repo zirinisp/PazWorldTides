@@ -18,6 +18,7 @@ public typealias TidalSetCompletion = (PazWorldTidesResult<TidalSet>) -> Void
 
 public enum PazWorldTidesResult<T> {
     case success(T)
+    case noTideForLocation
     case error(error: PazWorldTides.RequestError)
 }
 
@@ -25,6 +26,7 @@ open class PazWorldTides {
     
     public enum RequestError: Error {
         case noResult
+        case noLocationFound
         case notInitialized
         case urlError
         case serverError(error: Error)
@@ -95,6 +97,9 @@ open class PazWorldTides {
         request.response({ (request, response, data, error) in
             if let result = data {
                 let json = JSON(data: result)
+                if json["error"] == "No location found" {
+                    return completion(.noTideForLocation)
+                }
                 guard let tidalSet = TidalSet(json: json, dateFormatter: PazWorldTides.dateFormatter) else {
                     return completion(.error(error: .jSonError(error: nil)))
                 }

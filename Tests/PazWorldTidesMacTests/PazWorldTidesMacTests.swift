@@ -12,7 +12,7 @@ import SwiftyJSON
 
 class PazWorldTidesTests_Mac: XCTestCase {
     
-    var worldTides = PazWorldTides(apiKey: "")
+    var worldTides = PazWorldTides(apiKey: "98ec23a8-73bc-4fc8-bff4-e9cb942df6cb")
     
     override func setUp() {
         super.setUp()
@@ -28,7 +28,7 @@ class PazWorldTidesTests_Mac: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         let tidalExpectation = self.expectation(description: "tidalSetRequest")
-        self.worldTides.tidalSetFor(latitude: 37.82, longitude: 23.77, completion: { (result) in
+        self.worldTides.tidalSetFor(latitude: 45.89, longitude: 18.19, completion: { (result) in
             switch result {
             case .success(let tidalSet):
                 print("Got result heights: \(tidalSet.heights?.count ?? 0) extremes: \(tidalSet.extremes?.count ?? 0)")
@@ -78,7 +78,9 @@ class PazWorldTidesTests_Mac: XCTestCase {
                     let extreme2 = sortedExtremes2[i]
                     XCTAssert(extreme == extreme2)
                 }
-
+            case .noTideForLocation:
+                print("No tide for given location")
+                XCTAssert(true)
             case .error(let error):
                 print(error.localizedDescription)
                 XCTAssert(false)
