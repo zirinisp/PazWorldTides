@@ -32,6 +32,11 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		641F06A31F9CC2410003E73D /* PazWorldTides.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* PazWorldTides.swift */; };
+		641F06A41F9CC2410003E73D /* TidalExtreme.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* TidalExtreme.swift */; };
+		641F06A51F9CC2410003E73D /* TidalHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* TidalHeight.swift */; };
+		641F06A61F9CC2410003E73D /* TidalSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* TidalSet.swift */; };
+		641F06A71F9CC2410003E73D /* WorldTidesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* WorldTidesRequest.swift */; };
 		OBJ_126 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_132 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* Package.swift */; };
 		OBJ_138 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_90 /* Package.swift */; };
@@ -373,6 +378,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		641F069B1F9CC21B0003E73D /* PazWorldTides.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PazWorldTides.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		641F069E1F9CC21B0003E73D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		"Kitura-net::CHTTPParser::Product" /* CHTTPParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CHTTPParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Kitura-net::KituraNet::Product" /* KituraNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KituraNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"KituraRequest::KituraRequest::Product" /* KituraRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KituraRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -455,7 +462,7 @@
 		OBJ_97 /* Socket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
 		OBJ_98 /* SocketProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketProtocols.swift; sourceTree = "<group>"; };
 		OBJ_99 /* SocketUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketUtils.swift; sourceTree = "<group>"; };
-		"PazWorldTides::PazWorldTides::Product" /* PazWorldTides.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PazWorldTides.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"PazWorldTides::PazWorldTides::Product" /* PazWorldTides.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PazWorldTides.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"PazWorldTides::PazWorldTidesMacTests::Product" /* PazWorldTidesMacTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = PazWorldTidesMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		"PazWorldTides::PazWorldTidesiOSTests::Product" /* PazWorldTidesiOSTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = PazWorldTidesiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		"SSLService::SSLService::Product" /* SSLService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SSLService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -464,6 +471,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		641F06971F9CC21B0003E73D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_173 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
@@ -568,6 +582,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		641F069C1F9CC21B0003E73D /* PazWorldTides-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				641F069E1F9CC21B0003E73D /* Info.plist */,
+			);
+			path = "PazWorldTides-iOS";
+			sourceTree = "<group>";
+		};
 		OBJ_101 /* LoggerAPI 1.7.1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -618,6 +640,7 @@
 				"LoggerAPI::LoggerAPI::Product" /* LoggerAPI.framework */,
 				"Kitura-net::CHTTPParser::Product" /* CHTTPParser.framework */,
 				"SwiftyJSON::SwiftyJSON::Product" /* SwiftyJSON.framework */,
+				641F069B1F9CC21B0003E73D /* PazWorldTides.framework */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -776,7 +799,7 @@
 			path = ".build/checkouts/Kitura-net.git--7410958935072501107/Sources/KituraNet";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -784,9 +807,9 @@
 				OBJ_13 /* Tests */,
 				OBJ_18 /* PazWorldTides-iOS */,
 				OBJ_19 /* Dependencies */,
+				641F069C1F9CC21B0003E73D /* PazWorldTides-iOS */,
 				OBJ_110 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_56 /* FastCGI */ = {
@@ -890,7 +913,35 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		641F06981F9CC21B0003E73D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		641F069A1F9CC21B0003E73D /* PazWorldTides-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 641F06A01F9CC21B0003E73D /* Build configuration list for PBXNativeTarget "PazWorldTides-iOS" */;
+			buildPhases = (
+				641F06961F9CC21B0003E73D /* Sources */,
+				641F06971F9CC21B0003E73D /* Frameworks */,
+				641F06981F9CC21B0003E73D /* Headers */,
+				641F06991F9CC21B0003E73D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PazWorldTides-iOS";
+			productName = "PazWorldTides-iOS";
+			productReference = 641F069B1F9CC21B0003E73D /* PazWorldTides.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		"Kitura-net::CHTTPParser" /* CHTTPParser */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_337 /* Build configuration list for PBXNativeTarget "CHTTPParser" */;
@@ -1006,9 +1057,9 @@
 			productName = LoggerAPIPackageDescription;
 			productType = "com.apple.product-type.framework";
 		};
-		"PazWorldTides::PazWorldTides" /* PazWorldTides */ = {
+		"PazWorldTides::PazWorldTides" /* PazWorldTides-Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_164 /* Build configuration list for PBXNativeTarget "PazWorldTides" */;
+			buildConfigurationList = OBJ_164 /* Build configuration list for PBXNativeTarget "PazWorldTides-Mac" */;
 			buildPhases = (
 				OBJ_167 /* Sources */,
 				OBJ_173 /* Frameworks */,
@@ -1024,7 +1075,7 @@
 				OBJ_191 /* PBXTargetDependency */,
 				OBJ_193 /* PBXTargetDependency */,
 			);
-			name = PazWorldTides;
+			name = "PazWorldTides-Mac";
 			productName = PazWorldTides;
 			productReference = "PazWorldTides::PazWorldTides::Product" /* PazWorldTides.framework */;
 			productType = "com.apple.product-type.framework";
@@ -1187,6 +1238,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					641F069A1F9CC21B0003E73D = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "PazWorldTides" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1195,7 +1252,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_110 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1207,7 +1264,7 @@
 				"Socket::SwiftPMPackageDescription" /* SocketPackageDescription */,
 				"LoggerAPI::SwiftPMPackageDescription" /* LoggerAPIPackageDescription */,
 				"SwiftyJSON::SwiftPMPackageDescription" /* SwiftyJSONPackageDescription */,
-				"PazWorldTides::PazWorldTides" /* PazWorldTides */,
+				"PazWorldTides::PazWorldTides" /* PazWorldTides-Mac */,
 				"PazWorldTides::PazWorldTidesMacTests" /* PazWorldTidesMacTests */,
 				"PazWorldTides::PazWorldTidesiOSTests" /* PazWorldTidesiOSTests */,
 				"KituraRequest::KituraRequest" /* KituraRequest */,
@@ -1219,11 +1276,34 @@
 				"SwiftyJSON::SwiftyJSON" /* SwiftyJSON */,
 				"PazWorldTides::PazWorldTidesPackageTests::ProductTarget" /* PazWorldTidesPackageTests */,
 				"CCurl::CCurl::ProductTarget" /* CCurl */,
+				641F069A1F9CC21B0003E73D /* PazWorldTides-iOS */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		641F06991F9CC21B0003E73D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		641F06961F9CC21B0003E73D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				641F06A51F9CC2410003E73D /* TidalHeight.swift in Sources */,
+				641F06A31F9CC2410003E73D /* PazWorldTides.swift in Sources */,
+				641F06A71F9CC2410003E73D /* WorldTidesRequest.swift in Sources */,
+				641F06A41F9CC2410003E73D /* TidalExtreme.swift in Sources */,
+				641F06A61F9CC2410003E73D /* TidalSet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_125 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
@@ -1587,6 +1667,138 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		641F06A11F9CC21B0003E73D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "PazWorldTides-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paz-labs.PazWorldTides-iOS";
+				PRODUCT_NAME = PazWorldTides;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		641F06A21F9CC21B0003E73D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "PazWorldTides-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paz-labs.PazWorldTides-iOS";
+				PRODUCT_NAME = PazWorldTides;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		OBJ_123 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2264,6 +2476,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		641F06A01F9CC21B0003E73D /* Build configuration list for PBXNativeTarget "PazWorldTides-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				641F06A11F9CC21B0003E73D /* Debug */,
+				641F06A21F9CC21B0003E73D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		OBJ_122 /* Build configuration list for PBXNativeTarget "PazWorldTidesPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2327,7 +2548,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_164 /* Build configuration list for PBXNativeTarget "PazWorldTides" */ = {
+		OBJ_164 /* Build configuration list for PBXNativeTarget "PazWorldTides-Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_165 /* Debug */,
