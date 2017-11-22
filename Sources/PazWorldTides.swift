@@ -70,11 +70,15 @@ open class PazWorldTides {
         
         let task = self.urlSession.dataTask(with: url) { (data, response, error) in
             if let result = data {
-                let json = JSON(data: result)
-                guard let tidalSet = TidalSet(json: json, dateFormatter: PazWorldTides.dateFormatter) else {
-                    return completion(.error(error: .jSonError(error: nil)))
+                do {
+                    let json = try JSON(data: result)
+                    guard let tidalSet = TidalSet(json: json, dateFormatter: PazWorldTides.dateFormatter) else {
+                        return completion(.error(error: .jSonError(error: nil)))
+                    }
+                    return completion(.success(tidalSet))
+                } catch {
+                    completion(.error(error: .serverError(error: error)))
                 }
-                return completion(.success(tidalSet))
             } else {
                 if let letError = error {
                     return completion(.error(error: .serverError(error: letError)))
