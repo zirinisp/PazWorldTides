@@ -95,6 +95,30 @@ class PazWorldTidesTests_Mac: XCTestCase {
         
     }
     
+    func testNoTideForLocation() {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let tidalExpectation = self.expectation(description: "noTideForLocation")
+        self.worldTides.tidalSetFor(latitude: 45.89, longitude: 18.19, completion: { (result) in
+            switch result {
+            case .success(let tidalSet):
+                XCTAssert(false)
+            case .noTideForLocation:
+                print("No tide for given location")
+                XCTAssert(true)
+            case .error(let error):
+                print(error.localizedDescription)
+                XCTAssert(false)
+            }
+            tidalExpectation.fulfill()
+        })
+        waitForExpectations(timeout: 20.0) { (error) in
+            if let error = error {
+                XCTFail(error.localizedDescription)
+            }
+        }
+        
+    }
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
