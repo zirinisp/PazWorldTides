@@ -10,7 +10,6 @@ import Foundation
 #if os(iOS)
     import CoreLocation
 #else
-    import KituraRequest
 #endif
 import SwiftyJSON
 
@@ -51,13 +50,17 @@ open class PazWorldTides {
     public init(apiKey: String) {
         self.apiKey = apiKey
     }
-    #if os(iOS)
     lazy var urlSession: URLSession = {
         return URLSession.shared
     }()
     
+    #if os(iOS)
     public func tidalSetFor(coordinate: CLLocationCoordinate2D, requestTypes: [WorldTidesRequest.RequestType] = [.heights, .extremes], length: Int = 60*60*24*14, maxCalls: Int = 5, completion: @escaping TidalSetCompletion) {
-        guard let request = WorldTidesRequest(apiKey: apiKey, coordinate: coordinate, requestTypes: requestTypes, length: length, maxCalls: maxCalls) else {
+        self.tidalSetFor(latitude: coordinate.latitude, longitude: coordinate.longitude, requestTypes: requestTypes, length: length, maxCalls: maxCalls, completion: completion)
+    }
+    #endif
+    public func tidalSetFor(latitude: Double, longitude: Double, requestTypes: [WorldTidesRequest.RequestType] = [.heights, .extremes], length: Int = 60*60*24*14, maxCalls: Int = 5, completion: @escaping TidalSetCompletion) {
+        guard let request = WorldTidesRequest(apiKey: apiKey, latitude: latitude, longitude: longitude, requestTypes: requestTypes, length: length, maxCalls: maxCalls) else {
             return completion(.error(error: .unknown))
         }
         self.tidalSetFrom(request: request, completion: completion)
@@ -70,41 +73,11 @@ open class PazWorldTides {
         
         let task = self.urlSession.dataTask(with: url) { (data, response, error) in
             if let result = data {
-                do {
-                    let json = try JSON(data: result)
-                    guard let tidalSet = TidalSet(json: json, dateFormatter: PazWorldTides.dateFormatter) else {
-                        return completion(.error(error: .jSonError(error: nil)))
-                    }
-                    return completion(.success(tidalSet))
-                } catch {
-                    completion(.error(error: .serverError(error: error)))
-                }
-            } else {
-                if let letError = error {
-                    return completion(.error(error: .serverError(error: letError)))
-                }
-                return completion(.error(error: .unknown))
-            }
-        }
-        task.resume()
-    }
-    #else
-    public func tidalSetFor(latitude: Double, longitude: Double, requestTypes: [WorldTidesRequest.RequestType] = [.heights, .extremes], length: Int = 60*60*24*14, maxCalls: Int = 5, completion: @escaping TidalSetCompletion) {
-        guard let request = WorldTidesRequest(apiKey: apiKey, latitude: latitude, longitude: longitude, requestTypes: requestTypes, length: length, maxCalls: maxCalls) else {
-            return completion(.error(error: .unknown))
-        }
-        self.tidalSetFrom(request: request, completion: completion)
-    }
-    
-    public func tidalSetFrom(request: WorldTidesRequest, completion: @escaping TidalSetCompletion) {
-        let request = KituraRequest.request(.get, request.urlString)
-        request.response({ (request, response, data, error) in
-            if let result = data {
                 let json = JSON(data: result)
-                if json["error"] == "No location found" {
-                    return completion(.noTideForLocation)
-                }
                 guard let tidalSet = TidalSet(json: json, dateFormatter: PazWorldTides.dateFormatter) else {
+                    if json.dictionary?["error"] == "No location found" {
+                        return completion(.noTideForLocation)
+                    }
                     return completion(.error(error: .jSonError(error: nil)))
                 }
                 return completion(.success(tidalSet))
@@ -114,9 +87,8 @@ open class PazWorldTides {
                 }
                 return completion(.error(error: .unknown))
             }
-        })
+        }
+        task.resume()
     }
-
-    #endif
     
 }
