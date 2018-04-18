@@ -75,6 +75,9 @@ open class PazWorldTides {
             if let result = data {
                 let json = JSON(data: result)
                 guard let tidalSet = TidalSet(json: json, dateFormatter: PazWorldTides.dateFormatter) else {
+                    if json.dictionary?["error"] == "No location found" {
+                        return completion(.noTideForLocation)
+                    }
                     return completion(.error(error: .jSonError(error: nil)))
                 }
                 return completion(.success(tidalSet))
