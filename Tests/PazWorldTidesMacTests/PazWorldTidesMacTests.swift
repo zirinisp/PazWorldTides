@@ -28,7 +28,7 @@ class PazWorldTidesTests_Mac: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         let tidalExpectation = self.expectation(description: "tidalSetRequest")
-        self.worldTides.tidalSetFor(latitude: 45.89, longitude: 18.19, completion: { (result) in
+        self.worldTides.tidalSetFor(latitude: 52.95, longitude: 4.7, completion: { (result) in
             switch result {
             case .success(let tidalSet):
                 print("Got result heights: \(tidalSet.heights?.count ?? 0) extremes: \(tidalSet.extremes?.count ?? 0)")

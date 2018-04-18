@@ -83,6 +83,8 @@ class PazWorldTidesTests: XCTestCase {
             case .error(let error):
                 print(error.localizedDescription)
                 XCTAssert(false)
+            case .noTideForLocation:
+                print("No tide fot location")
             }
             tidalExpectation.fulfill()
         })

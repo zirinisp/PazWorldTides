@@ -7,24 +7,14 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		"CCurl::CCurl::ProductTarget" /* CCurl */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_358 /* Build configuration list for PBXAggregateTarget "CCurl" */;
-			buildPhases = (
-			);
-			dependencies = (
-			);
-			name = CCurl;
-			productName = CCurl;
-		};
 		"PazWorldTides::PazWorldTidesPackageTests::ProductTarget" /* PazWorldTidesPackageTests */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_352 /* Build configuration list for PBXAggregateTarget "PazWorldTidesPackageTests" */;
+			buildConfigurationList = OBJ_60 /* Build configuration list for PBXAggregateTarget "PazWorldTidesPackageTests" */;
 			buildPhases = (
 			);
 			dependencies = (
-				OBJ_355 /* PBXTargetDependency */,
-				OBJ_356 /* PBXTargetDependency */,
+				OBJ_63 /* PBXTargetDependency */,
+				OBJ_65 /* PBXTargetDependency */,
 			);
 			name = PazWorldTidesPackageTests;
 			productName = PazWorldTidesPackageTests;
@@ -32,343 +22,52 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		641F06A31F9CC2410003E73D /* PazWorldTides.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* PazWorldTides.swift */; };
-		641F06A41F9CC2410003E73D /* TidalExtreme.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* TidalExtreme.swift */; };
-		641F06A51F9CC2410003E73D /* TidalHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* TidalHeight.swift */; };
-		641F06A61F9CC2410003E73D /* TidalSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* TidalSet.swift */; };
-		641F06A71F9CC2410003E73D /* WorldTidesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* WorldTidesRequest.swift */; };
-		OBJ_126 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_132 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* Package.swift */; };
-		OBJ_138 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_90 /* Package.swift */; };
-		OBJ_144 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_94 /* Package.swift */; };
-		OBJ_150 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_100 /* Package.swift */; };
-		OBJ_156 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_104 /* Package.swift */; };
-		OBJ_162 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_109 /* Package.swift */; };
-		OBJ_168 /* PazWorldTides.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* PazWorldTides.swift */; };
-		OBJ_169 /* TidalExtreme.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* TidalExtreme.swift */; };
-		OBJ_170 /* TidalHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* TidalHeight.swift */; };
-		OBJ_171 /* TidalSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* TidalSet.swift */; };
-		OBJ_172 /* WorldTidesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* WorldTidesRequest.swift */; };
-		OBJ_174 /* KituraRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "KituraRequest::KituraRequest::Product" /* KituraRequest.framework */; };
-		OBJ_175 /* KituraNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Kitura-net::KituraNet::Product" /* KituraNet.framework */; };
-		OBJ_176 /* SSLService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SSLService::SSLService::Product" /* SSLService.framework */; };
-		OBJ_177 /* Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Socket::Socket::Product" /* Socket.framework */; };
-		OBJ_178 /* LoggerAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "LoggerAPI::LoggerAPI::Product" /* LoggerAPI.framework */; };
-		OBJ_179 /* CHTTPParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Kitura-net::CHTTPParser::Product" /* CHTTPParser.framework */; };
-		OBJ_180 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyJSON::SwiftyJSON::Product" /* SwiftyJSON.framework */; };
-		OBJ_200 /* PazWorldTidesMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* PazWorldTidesMacTests.swift */; };
-		OBJ_202 /* KituraRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "KituraRequest::KituraRequest::Product" /* KituraRequest.framework */; };
-		OBJ_203 /* KituraNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Kitura-net::KituraNet::Product" /* KituraNet.framework */; };
-		OBJ_204 /* SSLService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SSLService::SSLService::Product" /* SSLService.framework */; };
-		OBJ_205 /* Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Socket::Socket::Product" /* Socket.framework */; };
-		OBJ_206 /* LoggerAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "LoggerAPI::LoggerAPI::Product" /* LoggerAPI.framework */; };
-		OBJ_207 /* CHTTPParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Kitura-net::CHTTPParser::Product" /* CHTTPParser.framework */; };
-		OBJ_208 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyJSON::SwiftyJSON::Product" /* SwiftyJSON.framework */; };
-		OBJ_221 /* PazWorldTidesiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* PazWorldTidesiOSTests.swift */; };
-		OBJ_223 /* KituraRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "KituraRequest::KituraRequest::Product" /* KituraRequest.framework */; };
-		OBJ_224 /* KituraNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Kitura-net::KituraNet::Product" /* KituraNet.framework */; };
-		OBJ_225 /* SSLService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SSLService::SSLService::Product" /* SSLService.framework */; };
-		OBJ_226 /* Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Socket::Socket::Product" /* Socket.framework */; };
-		OBJ_227 /* LoggerAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "LoggerAPI::LoggerAPI::Product" /* LoggerAPI.framework */; };
-		OBJ_228 /* CHTTPParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Kitura-net::CHTTPParser::Product" /* CHTTPParser.framework */; };
-		OBJ_229 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyJSON::SwiftyJSON::Product" /* SwiftyJSON.framework */; };
-		OBJ_241 /* Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Encoding.swift */; };
-		OBJ_242 /* JSONEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* JSONEncoding.swift */; };
-		OBJ_243 /* MultipartEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* MultipartEncoding.swift */; };
-		OBJ_244 /* BodyBoundary.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* BodyBoundary.swift */; };
-		OBJ_245 /* BodyPart+MimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* BodyPart+MimeType.swift */; };
-		OBJ_246 /* BodyPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* BodyPart.swift */; };
-		OBJ_247 /* KituraRequest+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* KituraRequest+Random.swift */; };
-		OBJ_248 /* URLEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* URLEncoding.swift */; };
-		OBJ_249 /* KituraRequest+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* KituraRequest+Error.swift */; };
-		OBJ_250 /* KituraRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* KituraRequest.swift */; };
-		OBJ_251 /* Request+CompletionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* Request+CompletionHandler.swift */; };
-		OBJ_252 /* Request+Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* Request+Method.swift */; };
-		OBJ_253 /* Request+Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* Request+Parameters.swift */; };
-		OBJ_254 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* Request.swift */; };
-		OBJ_256 /* KituraNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Kitura-net::KituraNet::Product" /* KituraNet.framework */; };
-		OBJ_257 /* SSLService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SSLService::SSLService::Product" /* SSLService.framework */; };
-		OBJ_258 /* Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Socket::Socket::Product" /* Socket.framework */; };
-		OBJ_259 /* LoggerAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "LoggerAPI::LoggerAPI::Product" /* LoggerAPI.framework */; };
-		OBJ_260 /* CHTTPParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Kitura-net::CHTTPParser::Product" /* CHTTPParser.framework */; };
-		OBJ_270 /* BufferList.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* BufferList.swift */; };
-		OBJ_271 /* ClientRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* ClientRequest.swift */; };
-		OBJ_272 /* ClientResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* ClientResponse.swift */; };
-		OBJ_273 /* ConnectionUpgradeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* ConnectionUpgradeFactory.swift */; };
-		OBJ_274 /* ConnectionUpgrader.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* ConnectionUpgrader.swift */; };
-		OBJ_275 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* Error.swift */; };
-		OBJ_276 /* FastCGI.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* FastCGI.swift */; };
-		OBJ_277 /* FastCGIRecordCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* FastCGIRecordCreate.swift */; };
-		OBJ_278 /* FastCGIRecordParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* FastCGIRecordParser.swift */; };
-		OBJ_279 /* FastCGIServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* FastCGIServer.swift */; };
-		OBJ_280 /* FastCGIServerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* FastCGIServerRequest.swift */; };
-		OBJ_281 /* FastCGIServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* FastCGIServerResponse.swift */; };
-		OBJ_282 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* HTTP.swift */; };
-		OBJ_283 /* HTTPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* HTTPServer.swift */; };
-		OBJ_284 /* HTTPServerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* HTTPServerRequest.swift */; };
-		OBJ_285 /* HTTPServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* HTTPServerResponse.swift */; };
-		OBJ_286 /* IncomingHTTPSocketProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* IncomingHTTPSocketProcessor.swift */; };
-		OBJ_287 /* KeepAliveState.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* KeepAliveState.swift */; };
-		OBJ_288 /* HTTPParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* HTTPParser.swift */; };
-		OBJ_289 /* HTTPParserStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* HTTPParserStatus.swift */; };
-		OBJ_290 /* ParseResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* ParseResults.swift */; };
-		OBJ_291 /* URLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* URLParser.swift */; };
-		OBJ_292 /* HeadersContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* HeadersContainer.swift */; };
-		OBJ_293 /* IncomingSocketHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* IncomingSocketHandler.swift */; };
-		OBJ_294 /* IncomingSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* IncomingSocketManager.swift */; };
-		OBJ_295 /* IncomingSocketProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* IncomingSocketProcessor.swift */; };
-		OBJ_296 /* IncomingSocketProcessorCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* IncomingSocketProcessorCreator.swift */; };
-		OBJ_297 /* ListenerGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_80 /* ListenerGroup.swift */; };
-		OBJ_298 /* SPIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* SPIUtils.swift */; };
-		OBJ_299 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_83 /* Server.swift */; };
-		OBJ_300 /* ServerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_84 /* ServerDelegate.swift */; };
-		OBJ_301 /* ServerLifecycleListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_85 /* ServerLifecycleListener.swift */; };
-		OBJ_302 /* ServerMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_86 /* ServerMonitor.swift */; };
-		OBJ_303 /* ServerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_87 /* ServerState.swift */; };
-		OBJ_304 /* ServerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_88 /* ServerRequest.swift */; };
-		OBJ_305 /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_89 /* ServerResponse.swift */; };
-		OBJ_307 /* SSLService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SSLService::SSLService::Product" /* SSLService.framework */; };
-		OBJ_308 /* Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Socket::Socket::Product" /* Socket.framework */; };
-		OBJ_309 /* LoggerAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "LoggerAPI::LoggerAPI::Product" /* LoggerAPI.framework */; };
-		OBJ_310 /* CHTTPParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Kitura-net::CHTTPParser::Product" /* CHTTPParser.framework */; };
-		OBJ_319 /* SSLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_93 /* SSLService.swift */; };
-		OBJ_321 /* Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Socket::Socket::Product" /* Socket.framework */; };
-		OBJ_327 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_97 /* Socket.swift */; };
-		OBJ_328 /* SocketProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_98 /* SocketProtocols.swift */; };
-		OBJ_329 /* SocketUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_99 /* SocketUtils.swift */; };
-		OBJ_335 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_103 /* Logger.swift */; };
-		OBJ_341 /* http_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* http_parser.c */; };
-		OBJ_342 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* utils.c */; };
-		OBJ_348 /* LclJSONSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_107 /* LclJSONSerialization.swift */; };
-		OBJ_349 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_108 /* SwiftyJSON.swift */; };
+		OBJ_35 /* PazWorldTides.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* PazWorldTides.swift */; };
+		OBJ_36 /* TidalExtreme.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* TidalExtreme.swift */; };
+		OBJ_37 /* TidalHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* TidalHeight.swift */; };
+		OBJ_38 /* TidalSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* TidalSet.swift */; };
+		OBJ_39 /* WorldTidesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* WorldTidesRequest.swift */; };
+		OBJ_41 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyJSON::SwiftyJSON::Product" /* SwiftyJSON.framework */; };
+		OBJ_49 /* PazWorldTidesMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* PazWorldTidesMacTests.swift */; };
+		OBJ_51 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyJSON::SwiftyJSON::Product" /* SwiftyJSON.framework */; };
+		OBJ_58 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_70 /* PazWorldTidesiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* PazWorldTidesiOSTests.swift */; };
+		OBJ_72 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyJSON::SwiftyJSON::Product" /* SwiftyJSON.framework */; };
+		OBJ_78 /* LclJSONSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* LclJSONSerialization.swift */; };
+		OBJ_79 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* SwiftyJSON.swift */; };
+		OBJ_86 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		646093041F8257780053C333 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "KituraRequest::KituraRequest";
-			remoteInfo = KituraRequest;
-		};
-		646093051F8257780053C333 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Kitura-net::KituraNet";
-			remoteInfo = KituraNet;
-		};
-		646093061F8257780053C333 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "SSLService::SSLService";
-			remoteInfo = SSLService;
-		};
-		646093071F8257780053C333 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Socket::Socket";
-			remoteInfo = Socket;
-		};
-		646093081F8257780053C333 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Socket::Socket";
-			remoteInfo = Socket;
-		};
-		646093091F8257780053C333 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "LoggerAPI::LoggerAPI";
-			remoteInfo = LoggerAPI;
-		};
-		6460930A1F8257780053C333 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Kitura-net::CHTTPParser";
-			remoteInfo = CHTTPParser;
-		};
-		6460930B1F8257780053C333 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "SSLService::SSLService";
-			remoteInfo = SSLService;
-		};
-		6460930C1F8257780053C333 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Socket::Socket";
-			remoteInfo = Socket;
-		};
-		6460930D1F8257780053C333 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "LoggerAPI::LoggerAPI";
-			remoteInfo = LoggerAPI;
-		};
-		6460930E1F8257780053C333 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Kitura-net::CHTTPParser";
-			remoteInfo = CHTTPParser;
-		};
-		6460930F1F8257780053C333 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Kitura-net::KituraNet";
-			remoteInfo = KituraNet;
-		};
-		646093101F8257780053C333 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "SSLService::SSLService";
-			remoteInfo = SSLService;
-		};
-		646093111F8257780053C333 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Socket::Socket";
-			remoteInfo = Socket;
-		};
-		646093121F8257780053C333 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "LoggerAPI::LoggerAPI";
-			remoteInfo = LoggerAPI;
-		};
-		646093131F8257780053C333 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Kitura-net::CHTTPParser";
-			remoteInfo = CHTTPParser;
-		};
-		646093141F8257780053C333 /* PBXContainerItemProxy */ = {
+		643520BF20876AB90042326F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SwiftyJSON::SwiftyJSON";
 			remoteInfo = SwiftyJSON;
 		};
-		646093151F8257780053C333 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "KituraRequest::KituraRequest";
-			remoteInfo = KituraRequest;
-		};
-		646093161F8257780053C333 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Kitura-net::KituraNet";
-			remoteInfo = KituraNet;
-		};
-		646093171F8257780053C333 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "SSLService::SSLService";
-			remoteInfo = SSLService;
-		};
-		646093181F8257780053C333 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Socket::Socket";
-			remoteInfo = Socket;
-		};
-		646093191F8257780053C333 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "LoggerAPI::LoggerAPI";
-			remoteInfo = LoggerAPI;
-		};
-		6460931A1F8257780053C333 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Kitura-net::CHTTPParser";
-			remoteInfo = CHTTPParser;
-		};
-		6460931B1F8257780053C333 /* PBXContainerItemProxy */ = {
+		643520C020876AB90042326F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SwiftyJSON::SwiftyJSON";
 			remoteInfo = SwiftyJSON;
 		};
-		6460931C1F8257780053C333 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "KituraRequest::KituraRequest";
-			remoteInfo = KituraRequest;
-		};
-		6460931D1F8257780053C333 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Kitura-net::KituraNet";
-			remoteInfo = KituraNet;
-		};
-		6460931E1F8257780053C333 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "SSLService::SSLService";
-			remoteInfo = SSLService;
-		};
-		6460931F1F8257780053C333 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Socket::Socket";
-			remoteInfo = Socket;
-		};
-		646093201F8257780053C333 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "LoggerAPI::LoggerAPI";
-			remoteInfo = LoggerAPI;
-		};
-		646093211F8257780053C333 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Kitura-net::CHTTPParser";
-			remoteInfo = CHTTPParser;
-		};
-		646093221F8257780053C333 /* PBXContainerItemProxy */ = {
+		643520C120876AB90042326F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SwiftyJSON::SwiftyJSON";
 			remoteInfo = SwiftyJSON;
 		};
-		646093231F8257780053C333 /* PBXContainerItemProxy */ = {
+		643520C220876AB90042326F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "PazWorldTides::PazWorldTidesiOSTests";
 			remoteInfo = PazWorldTidesiOSTests;
 		};
-		646093241F8257780053C333 /* PBXContainerItemProxy */ = {
+		643520C320876AB90042326F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -378,201 +77,50 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		641F069B1F9CC21B0003E73D /* PazWorldTides.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PazWorldTides.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		641F069E1F9CC21B0003E73D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		"Kitura-net::CHTTPParser::Product" /* CHTTPParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CHTTPParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"Kitura-net::KituraNet::Product" /* KituraNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KituraNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"KituraRequest::KituraRequest::Product" /* KituraRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KituraRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"LoggerAPI::LoggerAPI::Product" /* LoggerAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoggerAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* TidalHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TidalHeight.swift; sourceTree = "<group>"; };
-		OBJ_100 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/zirinisp/Documents/xcode/paz/PazWorldTides/.build/checkouts/BlueSocket.git-3162807777605905816/Package.swift"; sourceTree = "<group>"; };
-		OBJ_103 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
-		OBJ_104 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/zirinisp/Documents/xcode/paz/PazWorldTides/.build/checkouts/LoggerAPI.git--6449715459278086880/Package.swift"; sourceTree = "<group>"; };
-		OBJ_107 /* LclJSONSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LclJSONSerialization.swift; sourceTree = "<group>"; };
-		OBJ_108 /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
-		OBJ_109 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/zirinisp/Documents/xcode/paz/PazWorldTides/.build/checkouts/SwiftyJSON.git--6955445084174387031/Package.swift"; sourceTree = "<group>"; };
 		OBJ_11 /* TidalSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TidalSet.swift; sourceTree = "<group>"; };
 		OBJ_12 /* WorldTidesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTidesRequest.swift; sourceTree = "<group>"; };
-		OBJ_15 /* PazWorldTidesiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PazWorldTidesiOSTests.swift; sourceTree = "<group>"; };
-		OBJ_17 /* PazWorldTidesMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PazWorldTidesMacTests.swift; sourceTree = "<group>"; };
+		OBJ_15 /* PazWorldTidesMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PazWorldTidesMacTests.swift; sourceTree = "<group>"; };
+		OBJ_17 /* PazWorldTidesiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PazWorldTidesiOSTests.swift; sourceTree = "<group>"; };
 		OBJ_18 /* PazWorldTides-iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "PazWorldTides-iOS"; sourceTree = SOURCE_ROOT; };
-		OBJ_23 /* Encoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encoding.swift; sourceTree = "<group>"; };
-		OBJ_24 /* JSONEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONEncoding.swift; sourceTree = "<group>"; };
-		OBJ_25 /* MultipartEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartEncoding.swift; sourceTree = "<group>"; };
-		OBJ_27 /* BodyBoundary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyBoundary.swift; sourceTree = "<group>"; };
-		OBJ_28 /* BodyPart+MimeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BodyPart+MimeType.swift"; sourceTree = "<group>"; };
-		OBJ_29 /* BodyPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyPart.swift; sourceTree = "<group>"; };
-		OBJ_30 /* KituraRequest+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KituraRequest+Random.swift"; sourceTree = "<group>"; };
-		OBJ_31 /* URLEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncoding.swift; sourceTree = "<group>"; };
-		OBJ_32 /* KituraRequest+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KituraRequest+Error.swift"; sourceTree = "<group>"; };
-		OBJ_33 /* KituraRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KituraRequest.swift; sourceTree = "<group>"; };
-		OBJ_35 /* Request+CompletionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Request+CompletionHandler.swift"; sourceTree = "<group>"; };
-		OBJ_36 /* Request+Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Request+Method.swift"; sourceTree = "<group>"; };
-		OBJ_37 /* Request+Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Request+Parameters.swift"; sourceTree = "<group>"; };
-		OBJ_38 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		OBJ_39 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/zirinisp/Documents/xcode/paz/PazWorldTides/.build/checkouts/Kitura-Request.git--6580905749313529741/Package.swift"; sourceTree = "<group>"; };
-		OBJ_42 /* http_parser.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = http_parser.c; sourceTree = "<group>"; };
-		OBJ_43 /* utils.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = utils.c; sourceTree = "<group>"; };
-		OBJ_45 /* utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
-		OBJ_46 /* http_parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = http_parser.h; sourceTree = "<group>"; };
-		OBJ_47 /* CHTTPParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHTTPParser.h; sourceTree = "<group>"; };
-		OBJ_48 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = /Users/zirinisp/Documents/xcode/paz/PazWorldTides/PazWorldTides.xcodeproj/GeneratedModuleMap/CHTTPParser/module.modulemap; sourceTree = "<group>"; };
-		OBJ_50 /* BufferList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BufferList.swift; sourceTree = "<group>"; };
-		OBJ_51 /* ClientRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientRequest.swift; sourceTree = "<group>"; };
-		OBJ_52 /* ClientResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientResponse.swift; sourceTree = "<group>"; };
-		OBJ_53 /* ConnectionUpgradeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionUpgradeFactory.swift; sourceTree = "<group>"; };
-		OBJ_54 /* ConnectionUpgrader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionUpgrader.swift; sourceTree = "<group>"; };
-		OBJ_55 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
-		OBJ_57 /* FastCGI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCGI.swift; sourceTree = "<group>"; };
-		OBJ_58 /* FastCGIRecordCreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCGIRecordCreate.swift; sourceTree = "<group>"; };
-		OBJ_59 /* FastCGIRecordParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCGIRecordParser.swift; sourceTree = "<group>"; };
+		OBJ_22 /* LclJSONSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LclJSONSerialization.swift; sourceTree = "<group>"; };
+		OBJ_23 /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		OBJ_24 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/zirinisp/Documents/xcode/PazWorldTides/.build/checkouts/SwiftyJSON.git--6955445084174387031/Package.swift"; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_60 /* FastCGIServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCGIServer.swift; sourceTree = "<group>"; };
-		OBJ_61 /* FastCGIServerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCGIServerRequest.swift; sourceTree = "<group>"; };
-		OBJ_62 /* FastCGIServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCGIServerResponse.swift; sourceTree = "<group>"; };
-		OBJ_64 /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
-		OBJ_65 /* HTTPServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPServer.swift; sourceTree = "<group>"; };
-		OBJ_66 /* HTTPServerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPServerRequest.swift; sourceTree = "<group>"; };
-		OBJ_67 /* HTTPServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPServerResponse.swift; sourceTree = "<group>"; };
-		OBJ_68 /* IncomingHTTPSocketProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingHTTPSocketProcessor.swift; sourceTree = "<group>"; };
-		OBJ_69 /* KeepAliveState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepAliveState.swift; sourceTree = "<group>"; };
-		OBJ_71 /* HTTPParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPParser.swift; sourceTree = "<group>"; };
-		OBJ_72 /* HTTPParserStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPParserStatus.swift; sourceTree = "<group>"; };
-		OBJ_73 /* ParseResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseResults.swift; sourceTree = "<group>"; };
-		OBJ_74 /* URLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParser.swift; sourceTree = "<group>"; };
-		OBJ_75 /* HeadersContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadersContainer.swift; sourceTree = "<group>"; };
-		OBJ_76 /* IncomingSocketHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingSocketHandler.swift; sourceTree = "<group>"; };
-		OBJ_77 /* IncomingSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingSocketManager.swift; sourceTree = "<group>"; };
-		OBJ_78 /* IncomingSocketProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingSocketProcessor.swift; sourceTree = "<group>"; };
-		OBJ_79 /* IncomingSocketProcessorCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingSocketProcessorCreator.swift; sourceTree = "<group>"; };
 		OBJ_8 /* PazWorldTides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PazWorldTides.swift; sourceTree = "<group>"; };
-		OBJ_80 /* ListenerGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenerGroup.swift; sourceTree = "<group>"; };
-		OBJ_81 /* SPIUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPIUtils.swift; sourceTree = "<group>"; };
-		OBJ_83 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
-		OBJ_84 /* ServerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerDelegate.swift; sourceTree = "<group>"; };
-		OBJ_85 /* ServerLifecycleListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerLifecycleListener.swift; sourceTree = "<group>"; };
-		OBJ_86 /* ServerMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerMonitor.swift; sourceTree = "<group>"; };
-		OBJ_87 /* ServerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerState.swift; sourceTree = "<group>"; };
-		OBJ_88 /* ServerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerRequest.swift; sourceTree = "<group>"; };
-		OBJ_89 /* ServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
 		OBJ_9 /* TidalExtreme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TidalExtreme.swift; sourceTree = "<group>"; };
-		OBJ_90 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/zirinisp/Documents/xcode/paz/PazWorldTides/.build/checkouts/Kitura-net.git--7410958935072501107/Package.swift"; sourceTree = "<group>"; };
-		OBJ_93 /* SSLService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLService.swift; sourceTree = "<group>"; };
-		OBJ_94 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/zirinisp/Documents/xcode/paz/PazWorldTides/.build/checkouts/BlueSSLService.git--6577639804771281610/Package.swift"; sourceTree = "<group>"; };
-		OBJ_97 /* Socket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
-		OBJ_98 /* SocketProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketProtocols.swift; sourceTree = "<group>"; };
-		OBJ_99 /* SocketUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketUtils.swift; sourceTree = "<group>"; };
-		"PazWorldTides::PazWorldTides::Product" /* PazWorldTides.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PazWorldTides.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"PazWorldTides::PazWorldTides::Product" /* PazWorldTides.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PazWorldTides.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"PazWorldTides::PazWorldTidesMacTests::Product" /* PazWorldTidesMacTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = PazWorldTidesMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		"PazWorldTides::PazWorldTidesiOSTests::Product" /* PazWorldTidesiOSTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = PazWorldTidesiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		"SSLService::SSLService::Product" /* SSLService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SSLService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"Socket::Socket::Product" /* Socket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Socket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"SwiftyJSON::SwiftyJSON::Product" /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		641F06971F9CC21B0003E73D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_173 /* Frameworks */ = {
+		OBJ_40 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_174 /* KituraRequest.framework in Frameworks */,
-				OBJ_175 /* KituraNet.framework in Frameworks */,
-				OBJ_176 /* SSLService.framework in Frameworks */,
-				OBJ_177 /* Socket.framework in Frameworks */,
-				OBJ_178 /* LoggerAPI.framework in Frameworks */,
-				OBJ_179 /* CHTTPParser.framework in Frameworks */,
-				OBJ_180 /* SwiftyJSON.framework in Frameworks */,
+				OBJ_41 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_201 /* Frameworks */ = {
+		OBJ_50 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_202 /* KituraRequest.framework in Frameworks */,
-				OBJ_203 /* KituraNet.framework in Frameworks */,
-				OBJ_204 /* SSLService.framework in Frameworks */,
-				OBJ_205 /* Socket.framework in Frameworks */,
-				OBJ_206 /* LoggerAPI.framework in Frameworks */,
-				OBJ_207 /* CHTTPParser.framework in Frameworks */,
-				OBJ_208 /* SwiftyJSON.framework in Frameworks */,
+				OBJ_51 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_222 /* Frameworks */ = {
+		OBJ_71 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_223 /* KituraRequest.framework in Frameworks */,
-				OBJ_224 /* KituraNet.framework in Frameworks */,
-				OBJ_225 /* SSLService.framework in Frameworks */,
-				OBJ_226 /* Socket.framework in Frameworks */,
-				OBJ_227 /* LoggerAPI.framework in Frameworks */,
-				OBJ_228 /* CHTTPParser.framework in Frameworks */,
-				OBJ_229 /* SwiftyJSON.framework in Frameworks */,
+				OBJ_72 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_255 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_256 /* KituraNet.framework in Frameworks */,
-				OBJ_257 /* SSLService.framework in Frameworks */,
-				OBJ_258 /* Socket.framework in Frameworks */,
-				OBJ_259 /* LoggerAPI.framework in Frameworks */,
-				OBJ_260 /* CHTTPParser.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_306 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_307 /* SSLService.framework in Frameworks */,
-				OBJ_308 /* Socket.framework in Frameworks */,
-				OBJ_309 /* LoggerAPI.framework in Frameworks */,
-				OBJ_310 /* CHTTPParser.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_320 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_321 /* Socket.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_330 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_336 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_343 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_350 /* Frameworks */ = {
+		OBJ_80 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
@@ -582,224 +130,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		641F069C1F9CC21B0003E73D /* PazWorldTides-iOS */ = {
-			isa = PBXGroup;
-			children = (
-				641F069E1F9CC21B0003E73D /* Info.plist */,
-			);
-			path = "PazWorldTides-iOS";
-			sourceTree = "<group>";
-		};
-		OBJ_101 /* LoggerAPI 1.7.1 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_102 /* LoggerAPI */,
-				OBJ_104 /* Package.swift */,
-			);
-			name = "LoggerAPI 1.7.1";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_102 /* LoggerAPI */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_103 /* Logger.swift */,
-			);
-			name = LoggerAPI;
-			path = ".build/checkouts/LoggerAPI.git--6449715459278086880/Sources/LoggerAPI";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_105 /* SwiftyJSON 17.0.0 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_106 /* SwiftyJSON */,
-				OBJ_109 /* Package.swift */,
-			);
-			name = "SwiftyJSON 17.0.0";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_106 /* SwiftyJSON */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_107 /* LclJSONSerialization.swift */,
-				OBJ_108 /* SwiftyJSON.swift */,
-			);
-			name = SwiftyJSON;
-			path = ".build/checkouts/SwiftyJSON.git--6955445084174387031/Sources/SwiftyJSON";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_110 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				"PazWorldTides::PazWorldTides::Product" /* PazWorldTides.framework */,
-				"PazWorldTides::PazWorldTidesMacTests::Product" /* PazWorldTidesMacTests.xctest */,
-				"PazWorldTides::PazWorldTidesiOSTests::Product" /* PazWorldTidesiOSTests.xctest */,
-				"KituraRequest::KituraRequest::Product" /* KituraRequest.framework */,
-				"Kitura-net::KituraNet::Product" /* KituraNet.framework */,
-				"SSLService::SSLService::Product" /* SSLService.framework */,
-				"Socket::Socket::Product" /* Socket.framework */,
-				"LoggerAPI::LoggerAPI::Product" /* LoggerAPI.framework */,
-				"Kitura-net::CHTTPParser::Product" /* CHTTPParser.framework */,
-				"SwiftyJSON::SwiftyJSON::Product" /* SwiftyJSON.framework */,
-				641F069B1F9CC21B0003E73D /* PazWorldTides.framework */,
-			);
-			name = Products;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		OBJ_13 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_14 /* PazWorldTidesiOSTests */,
-				OBJ_16 /* PazWorldTidesMacTests */,
+				OBJ_14 /* PazWorldTidesMacTests */,
+				OBJ_16 /* PazWorldTidesiOSTests */,
 			);
 			name = Tests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_14 /* PazWorldTidesiOSTests */ = {
+		OBJ_14 /* PazWorldTidesMacTests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_15 /* PazWorldTidesiOSTests.swift */,
-			);
-			name = PazWorldTidesiOSTests;
-			path = Tests/PazWorldTidesiOSTests;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_16 /* PazWorldTidesMacTests */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_17 /* PazWorldTidesMacTests.swift */,
+				OBJ_15 /* PazWorldTidesMacTests.swift */,
 			);
 			name = PazWorldTidesMacTests;
 			path = Tests/PazWorldTidesMacTests;
 			sourceTree = SOURCE_ROOT;
 		};
+		OBJ_16 /* PazWorldTidesiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_17 /* PazWorldTidesiOSTests.swift */,
+			);
+			name = PazWorldTidesiOSTests;
+			path = Tests/PazWorldTidesiOSTests;
+			sourceTree = SOURCE_ROOT;
+		};
 		OBJ_19 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_20 /* KituraRequest 0.8.2 */,
-				OBJ_40 /* Kitura-net 1.7.16 */,
-				OBJ_91 /* SSLService 0.12.57 */,
-				OBJ_95 /* Socket 0.12.70 */,
-				OBJ_101 /* LoggerAPI 1.7.1 */,
-				OBJ_105 /* SwiftyJSON 17.0.0 */,
+				OBJ_20 /* SwiftyJSON 17.0.1 */,
 			);
 			name = Dependencies;
 			sourceTree = "<group>";
 		};
-		OBJ_20 /* KituraRequest 0.8.2 */ = {
+		OBJ_20 /* SwiftyJSON 17.0.1 */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_21 /* KituraRequest */,
-				OBJ_39 /* Package.swift */,
+				OBJ_21 /* SwiftyJSON */,
+				OBJ_24 /* Package.swift */,
 			);
-			name = "KituraRequest 0.8.2";
+			name = "SwiftyJSON 17.0.1";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_21 /* KituraRequest */ = {
+		OBJ_21 /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_22 /* Encoding */,
-				OBJ_32 /* KituraRequest+Error.swift */,
-				OBJ_33 /* KituraRequest.swift */,
-				OBJ_34 /* Request */,
+				OBJ_22 /* LclJSONSerialization.swift */,
+				OBJ_23 /* SwiftyJSON.swift */,
 			);
-			name = KituraRequest;
-			path = ".build/checkouts/Kitura-Request.git--6580905749313529741/Sources/KituraRequest";
+			name = SwiftyJSON;
+			path = ".build/checkouts/SwiftyJSON.git--6955445084174387031/Sources/SwiftyJSON";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_22 /* Encoding */ = {
+		OBJ_25 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_23 /* Encoding.swift */,
-				OBJ_24 /* JSONEncoding.swift */,
-				OBJ_25 /* MultipartEncoding.swift */,
-				OBJ_26 /* MultipartFormData */,
-				OBJ_31 /* URLEncoding.swift */,
+				"PazWorldTides::PazWorldTides::Product" /* PazWorldTides.framework */,
+				"SwiftyJSON::SwiftyJSON::Product" /* SwiftyJSON.framework */,
+				"PazWorldTides::PazWorldTidesMacTests::Product" /* PazWorldTidesMacTests.xctest */,
+				"PazWorldTides::PazWorldTidesiOSTests::Product" /* PazWorldTidesiOSTests.xctest */,
 			);
-			path = Encoding;
-			sourceTree = "<group>";
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_26 /* MultipartFormData */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_27 /* BodyBoundary.swift */,
-				OBJ_28 /* BodyPart+MimeType.swift */,
-				OBJ_29 /* BodyPart.swift */,
-				OBJ_30 /* KituraRequest+Random.swift */,
-			);
-			path = MultipartFormData;
-			sourceTree = "<group>";
-		};
-		OBJ_34 /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_35 /* Request+CompletionHandler.swift */,
-				OBJ_36 /* Request+Method.swift */,
-				OBJ_37 /* Request+Parameters.swift */,
-				OBJ_38 /* Request.swift */,
-			);
-			path = Request;
-			sourceTree = "<group>";
-		};
-		OBJ_40 /* Kitura-net 1.7.16 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_41 /* CHTTPParser */,
-				OBJ_49 /* KituraNet */,
-				OBJ_90 /* Package.swift */,
-			);
-			name = "Kitura-net 1.7.16";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_41 /* CHTTPParser */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_42 /* http_parser.c */,
-				OBJ_43 /* utils.c */,
-				OBJ_44 /* include */,
-			);
-			name = CHTTPParser;
-			path = ".build/checkouts/Kitura-net.git--7410958935072501107/Sources/CHTTPParser";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_44 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_45 /* utils.h */,
-				OBJ_46 /* http_parser.h */,
-				OBJ_47 /* CHTTPParser.h */,
-				OBJ_48 /* module.modulemap */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		OBJ_49 /* KituraNet */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_50 /* BufferList.swift */,
-				OBJ_51 /* ClientRequest.swift */,
-				OBJ_52 /* ClientResponse.swift */,
-				OBJ_53 /* ConnectionUpgradeFactory.swift */,
-				OBJ_54 /* ConnectionUpgrader.swift */,
-				OBJ_55 /* Error.swift */,
-				OBJ_56 /* FastCGI */,
-				OBJ_63 /* HTTP */,
-				OBJ_70 /* HTTPParser */,
-				OBJ_75 /* HeadersContainer.swift */,
-				OBJ_76 /* IncomingSocketHandler.swift */,
-				OBJ_77 /* IncomingSocketManager.swift */,
-				OBJ_78 /* IncomingSocketProcessor.swift */,
-				OBJ_79 /* IncomingSocketProcessorCreator.swift */,
-				OBJ_80 /* ListenerGroup.swift */,
-				OBJ_81 /* SPIUtils.swift */,
-				OBJ_82 /* Server */,
-				OBJ_88 /* ServerRequest.swift */,
-				OBJ_89 /* ServerResponse.swift */,
-			);
-			name = KituraNet;
-			path = ".build/checkouts/Kitura-net.git--7410958935072501107/Sources/KituraNet";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_5 = {
+		OBJ_5 /*  */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -807,35 +203,9 @@
 				OBJ_13 /* Tests */,
 				OBJ_18 /* PazWorldTides-iOS */,
 				OBJ_19 /* Dependencies */,
-				641F069C1F9CC21B0003E73D /* PazWorldTides-iOS */,
-				OBJ_110 /* Products */,
+				OBJ_25 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		OBJ_56 /* FastCGI */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_57 /* FastCGI.swift */,
-				OBJ_58 /* FastCGIRecordCreate.swift */,
-				OBJ_59 /* FastCGIRecordParser.swift */,
-				OBJ_60 /* FastCGIServer.swift */,
-				OBJ_61 /* FastCGIServerRequest.swift */,
-				OBJ_62 /* FastCGIServerResponse.swift */,
-			);
-			path = FastCGI;
-			sourceTree = "<group>";
-		};
-		OBJ_63 /* HTTP */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_64 /* HTTP.swift */,
-				OBJ_65 /* HTTPServer.swift */,
-				OBJ_66 /* HTTPServerRequest.swift */,
-				OBJ_67 /* HTTPServerResponse.swift */,
-				OBJ_68 /* IncomingHTTPSocketProcessor.swift */,
-				OBJ_69 /* KeepAliveState.swift */,
-			);
-			path = HTTP;
+			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -850,253 +220,37 @@
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_70 /* HTTPParser */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_71 /* HTTPParser.swift */,
-				OBJ_72 /* HTTPParserStatus.swift */,
-				OBJ_73 /* ParseResults.swift */,
-				OBJ_74 /* URLParser.swift */,
-			);
-			path = HTTPParser;
-			sourceTree = "<group>";
-		};
-		OBJ_82 /* Server */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_83 /* Server.swift */,
-				OBJ_84 /* ServerDelegate.swift */,
-				OBJ_85 /* ServerLifecycleListener.swift */,
-				OBJ_86 /* ServerMonitor.swift */,
-				OBJ_87 /* ServerState.swift */,
-			);
-			path = Server;
-			sourceTree = "<group>";
-		};
-		OBJ_91 /* SSLService 0.12.57 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_92 /* SSLService */,
-				OBJ_94 /* Package.swift */,
-			);
-			name = "SSLService 0.12.57";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_92 /* SSLService */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_93 /* SSLService.swift */,
-			);
-			name = SSLService;
-			path = ".build/checkouts/BlueSSLService.git--6577639804771281610/Sources/SSLService";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_95 /* Socket 0.12.70 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_96 /* Socket */,
-				OBJ_100 /* Package.swift */,
-			);
-			name = "Socket 0.12.70";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_96 /* Socket */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_97 /* Socket.swift */,
-				OBJ_98 /* SocketProtocols.swift */,
-				OBJ_99 /* SocketUtils.swift */,
-			);
-			name = Socket;
-			path = ".build/checkouts/BlueSocket.git-3162807777605905816/Sources/Socket";
-			sourceTree = SOURCE_ROOT;
-		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		641F06981F9CC21B0003E73D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		641F069A1F9CC21B0003E73D /* PazWorldTides-iOS */ = {
+		"PazWorldTides::PazWorldTides" /* PazWorldTides */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 641F06A01F9CC21B0003E73D /* Build configuration list for PBXNativeTarget "PazWorldTides-iOS" */;
+			buildConfigurationList = OBJ_31 /* Build configuration list for PBXNativeTarget "PazWorldTides" */;
 			buildPhases = (
-				641F06961F9CC21B0003E73D /* Sources */,
-				641F06971F9CC21B0003E73D /* Frameworks */,
-				641F06981F9CC21B0003E73D /* Headers */,
-				641F06991F9CC21B0003E73D /* Resources */,
+				OBJ_34 /* Sources */,
+				OBJ_40 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				OBJ_42 /* PBXTargetDependency */,
 			);
-			name = "PazWorldTides-iOS";
-			productName = "PazWorldTides-iOS";
-			productReference = 641F069B1F9CC21B0003E73D /* PazWorldTides.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"Kitura-net::CHTTPParser" /* CHTTPParser */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_337 /* Build configuration list for PBXNativeTarget "CHTTPParser" */;
-			buildPhases = (
-				OBJ_340 /* Sources */,
-				OBJ_343 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CHTTPParser;
-			productName = CHTTPParser;
-			productReference = "Kitura-net::CHTTPParser::Product" /* CHTTPParser.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"Kitura-net::KituraNet" /* KituraNet */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_266 /* Build configuration list for PBXNativeTarget "KituraNet" */;
-			buildPhases = (
-				OBJ_269 /* Sources */,
-				OBJ_306 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_311 /* PBXTargetDependency */,
-				OBJ_312 /* PBXTargetDependency */,
-				OBJ_313 /* PBXTargetDependency */,
-				OBJ_314 /* PBXTargetDependency */,
-			);
-			name = KituraNet;
-			productName = KituraNet;
-			productReference = "Kitura-net::KituraNet::Product" /* KituraNet.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"Kitura-net::SwiftPMPackageDescription" /* Kitura-netPackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_134 /* Build configuration list for PBXNativeTarget "Kitura-netPackageDescription" */;
-			buildPhases = (
-				OBJ_137 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Kitura-netPackageDescription";
-			productName = "Kitura-netPackageDescription";
-			productType = "com.apple.product-type.framework";
-		};
-		"KituraRequest::KituraRequest" /* KituraRequest */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_237 /* Build configuration list for PBXNativeTarget "KituraRequest" */;
-			buildPhases = (
-				OBJ_240 /* Sources */,
-				OBJ_255 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_261 /* PBXTargetDependency */,
-				OBJ_262 /* PBXTargetDependency */,
-				OBJ_263 /* PBXTargetDependency */,
-				OBJ_264 /* PBXTargetDependency */,
-				OBJ_265 /* PBXTargetDependency */,
-			);
-			name = KituraRequest;
-			productName = KituraRequest;
-			productReference = "KituraRequest::KituraRequest::Product" /* KituraRequest.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"KituraRequest::SwiftPMPackageDescription" /* KituraRequestPackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_128 /* Build configuration list for PBXNativeTarget "KituraRequestPackageDescription" */;
-			buildPhases = (
-				OBJ_131 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = KituraRequestPackageDescription;
-			productName = KituraRequestPackageDescription;
-			productType = "com.apple.product-type.framework";
-		};
-		"LoggerAPI::LoggerAPI" /* LoggerAPI */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_331 /* Build configuration list for PBXNativeTarget "LoggerAPI" */;
-			buildPhases = (
-				OBJ_334 /* Sources */,
-				OBJ_336 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LoggerAPI;
-			productName = LoggerAPI;
-			productReference = "LoggerAPI::LoggerAPI::Product" /* LoggerAPI.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"LoggerAPI::SwiftPMPackageDescription" /* LoggerAPIPackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_152 /* Build configuration list for PBXNativeTarget "LoggerAPIPackageDescription" */;
-			buildPhases = (
-				OBJ_155 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LoggerAPIPackageDescription;
-			productName = LoggerAPIPackageDescription;
-			productType = "com.apple.product-type.framework";
-		};
-		"PazWorldTides::PazWorldTides" /* PazWorldTides-Mac */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_164 /* Build configuration list for PBXNativeTarget "PazWorldTides-Mac" */;
-			buildPhases = (
-				OBJ_167 /* Sources */,
-				OBJ_173 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_181 /* PBXTargetDependency */,
-				OBJ_183 /* PBXTargetDependency */,
-				OBJ_185 /* PBXTargetDependency */,
-				OBJ_187 /* PBXTargetDependency */,
-				OBJ_189 /* PBXTargetDependency */,
-				OBJ_191 /* PBXTargetDependency */,
-				OBJ_193 /* PBXTargetDependency */,
-			);
-			name = "PazWorldTides-Mac";
+			name = PazWorldTides;
 			productName = PazWorldTides;
 			productReference = "PazWorldTides::PazWorldTides::Product" /* PazWorldTides.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		"PazWorldTides::PazWorldTidesMacTests" /* PazWorldTidesMacTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_196 /* Build configuration list for PBXNativeTarget "PazWorldTidesMacTests" */;
+			buildConfigurationList = OBJ_45 /* Build configuration list for PBXNativeTarget "PazWorldTidesMacTests" */;
 			buildPhases = (
-				OBJ_199 /* Sources */,
-				OBJ_201 /* Frameworks */,
+				OBJ_48 /* Sources */,
+				OBJ_50 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_209 /* PBXTargetDependency */,
-				OBJ_210 /* PBXTargetDependency */,
-				OBJ_211 /* PBXTargetDependency */,
-				OBJ_212 /* PBXTargetDependency */,
-				OBJ_213 /* PBXTargetDependency */,
-				OBJ_214 /* PBXTargetDependency */,
-				OBJ_215 /* PBXTargetDependency */,
+				OBJ_52 /* PBXTargetDependency */,
 			);
 			name = PazWorldTidesMacTests;
 			productName = PazWorldTidesMacTests;
@@ -1105,21 +259,15 @@
 		};
 		"PazWorldTides::PazWorldTidesiOSTests" /* PazWorldTidesiOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_217 /* Build configuration list for PBXNativeTarget "PazWorldTidesiOSTests" */;
+			buildConfigurationList = OBJ_66 /* Build configuration list for PBXNativeTarget "PazWorldTidesiOSTests" */;
 			buildPhases = (
-				OBJ_220 /* Sources */,
-				OBJ_222 /* Frameworks */,
+				OBJ_69 /* Sources */,
+				OBJ_71 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_230 /* PBXTargetDependency */,
-				OBJ_231 /* PBXTargetDependency */,
-				OBJ_232 /* PBXTargetDependency */,
-				OBJ_233 /* PBXTargetDependency */,
-				OBJ_234 /* PBXTargetDependency */,
-				OBJ_235 /* PBXTargetDependency */,
-				OBJ_236 /* PBXTargetDependency */,
+				OBJ_73 /* PBXTargetDependency */,
 			);
 			name = PazWorldTidesiOSTests;
 			productName = PazWorldTidesiOSTests;
@@ -1128,9 +276,9 @@
 		};
 		"PazWorldTides::SwiftPMPackageDescription" /* PazWorldTidesPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_122 /* Build configuration list for PBXNativeTarget "PazWorldTidesPackageDescription" */;
+			buildConfigurationList = OBJ_54 /* Build configuration list for PBXNativeTarget "PazWorldTidesPackageDescription" */;
 			buildPhases = (
-				OBJ_125 /* Sources */,
+				OBJ_57 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -1140,72 +288,11 @@
 			productName = PazWorldTidesPackageDescription;
 			productType = "com.apple.product-type.framework";
 		};
-		"SSLService::SSLService" /* SSLService */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_315 /* Build configuration list for PBXNativeTarget "SSLService" */;
-			buildPhases = (
-				OBJ_318 /* Sources */,
-				OBJ_320 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_322 /* PBXTargetDependency */,
-			);
-			name = SSLService;
-			productName = SSLService;
-			productReference = "SSLService::SSLService::Product" /* SSLService.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"SSLService::SwiftPMPackageDescription" /* SSLServicePackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_140 /* Build configuration list for PBXNativeTarget "SSLServicePackageDescription" */;
-			buildPhases = (
-				OBJ_143 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SSLServicePackageDescription;
-			productName = SSLServicePackageDescription;
-			productType = "com.apple.product-type.framework";
-		};
-		"Socket::Socket" /* Socket */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_323 /* Build configuration list for PBXNativeTarget "Socket" */;
-			buildPhases = (
-				OBJ_326 /* Sources */,
-				OBJ_330 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Socket;
-			productName = Socket;
-			productReference = "Socket::Socket::Product" /* Socket.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"Socket::SwiftPMPackageDescription" /* SocketPackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_146 /* Build configuration list for PBXNativeTarget "SocketPackageDescription" */;
-			buildPhases = (
-				OBJ_149 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SocketPackageDescription;
-			productName = SocketPackageDescription;
-			productType = "com.apple.product-type.framework";
-		};
 		"SwiftyJSON::SwiftPMPackageDescription" /* SwiftyJSONPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_158 /* Build configuration list for PBXNativeTarget "SwiftyJSONPackageDescription" */;
+			buildConfigurationList = OBJ_82 /* Build configuration list for PBXNativeTarget "SwiftyJSONPackageDescription" */;
 			buildPhases = (
-				OBJ_161 /* Sources */,
+				OBJ_85 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -1217,10 +304,10 @@
 		};
 		"SwiftyJSON::SwiftyJSON" /* SwiftyJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_344 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildConfigurationList = OBJ_74 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
 			buildPhases = (
-				OBJ_347 /* Sources */,
-				OBJ_350 /* Frameworks */,
+				OBJ_77 /* Sources */,
+				OBJ_80 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1238,12 +325,6 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 9999;
-				TargetAttributes = {
-					641F069A1F9CC21B0003E73D = {
-						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
-					};
-				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "PazWorldTides" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1252,937 +333,107 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5;
-			productRefGroup = OBJ_110 /* Products */;
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_25 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				"PazWorldTides::SwiftPMPackageDescription" /* PazWorldTidesPackageDescription */,
-				"KituraRequest::SwiftPMPackageDescription" /* KituraRequestPackageDescription */,
-				"Kitura-net::SwiftPMPackageDescription" /* Kitura-netPackageDescription */,
-				"SSLService::SwiftPMPackageDescription" /* SSLServicePackageDescription */,
-				"Socket::SwiftPMPackageDescription" /* SocketPackageDescription */,
-				"LoggerAPI::SwiftPMPackageDescription" /* LoggerAPIPackageDescription */,
-				"SwiftyJSON::SwiftPMPackageDescription" /* SwiftyJSONPackageDescription */,
-				"PazWorldTides::PazWorldTides" /* PazWorldTides-Mac */,
+				"PazWorldTides::PazWorldTides" /* PazWorldTides */,
 				"PazWorldTides::PazWorldTidesMacTests" /* PazWorldTidesMacTests */,
-				"PazWorldTides::PazWorldTidesiOSTests" /* PazWorldTidesiOSTests */,
-				"KituraRequest::KituraRequest" /* KituraRequest */,
-				"Kitura-net::KituraNet" /* KituraNet */,
-				"SSLService::SSLService" /* SSLService */,
-				"Socket::Socket" /* Socket */,
-				"LoggerAPI::LoggerAPI" /* LoggerAPI */,
-				"Kitura-net::CHTTPParser" /* CHTTPParser */,
-				"SwiftyJSON::SwiftyJSON" /* SwiftyJSON */,
+				"PazWorldTides::SwiftPMPackageDescription" /* PazWorldTidesPackageDescription */,
 				"PazWorldTides::PazWorldTidesPackageTests::ProductTarget" /* PazWorldTidesPackageTests */,
-				"CCurl::CCurl::ProductTarget" /* CCurl */,
-				641F069A1F9CC21B0003E73D /* PazWorldTides-iOS */,
+				"PazWorldTides::PazWorldTidesiOSTests" /* PazWorldTidesiOSTests */,
+				"SwiftyJSON::SwiftyJSON" /* SwiftyJSON */,
+				"SwiftyJSON::SwiftPMPackageDescription" /* SwiftyJSONPackageDescription */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		641F06991F9CC21B0003E73D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		641F06961F9CC21B0003E73D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				641F06A51F9CC2410003E73D /* TidalHeight.swift in Sources */,
-				641F06A31F9CC2410003E73D /* PazWorldTides.swift in Sources */,
-				641F06A71F9CC2410003E73D /* WorldTidesRequest.swift in Sources */,
-				641F06A41F9CC2410003E73D /* TidalExtreme.swift in Sources */,
-				641F06A61F9CC2410003E73D /* TidalSet.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_125 /* Sources */ = {
+		OBJ_34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_126 /* Package.swift in Sources */,
+				OBJ_35 /* PazWorldTides.swift in Sources */,
+				OBJ_36 /* TidalExtreme.swift in Sources */,
+				OBJ_37 /* TidalHeight.swift in Sources */,
+				OBJ_38 /* TidalSet.swift in Sources */,
+				OBJ_39 /* WorldTidesRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_131 /* Sources */ = {
+		OBJ_48 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_132 /* Package.swift in Sources */,
+				OBJ_49 /* PazWorldTidesMacTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_137 /* Sources */ = {
+		OBJ_57 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_138 /* Package.swift in Sources */,
+				OBJ_58 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_143 /* Sources */ = {
+		OBJ_69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_144 /* Package.swift in Sources */,
+				OBJ_70 /* PazWorldTidesiOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_149 /* Sources */ = {
+		OBJ_77 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_150 /* Package.swift in Sources */,
+				OBJ_78 /* LclJSONSerialization.swift in Sources */,
+				OBJ_79 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_155 /* Sources */ = {
+		OBJ_85 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_156 /* Package.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_161 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_162 /* Package.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_167 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_168 /* PazWorldTides.swift in Sources */,
-				OBJ_169 /* TidalExtreme.swift in Sources */,
-				OBJ_170 /* TidalHeight.swift in Sources */,
-				OBJ_171 /* TidalSet.swift in Sources */,
-				OBJ_172 /* WorldTidesRequest.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_199 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_200 /* PazWorldTidesMacTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_220 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_221 /* PazWorldTidesiOSTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_240 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_241 /* Encoding.swift in Sources */,
-				OBJ_242 /* JSONEncoding.swift in Sources */,
-				OBJ_243 /* MultipartEncoding.swift in Sources */,
-				OBJ_244 /* BodyBoundary.swift in Sources */,
-				OBJ_245 /* BodyPart+MimeType.swift in Sources */,
-				OBJ_246 /* BodyPart.swift in Sources */,
-				OBJ_247 /* KituraRequest+Random.swift in Sources */,
-				OBJ_248 /* URLEncoding.swift in Sources */,
-				OBJ_249 /* KituraRequest+Error.swift in Sources */,
-				OBJ_250 /* KituraRequest.swift in Sources */,
-				OBJ_251 /* Request+CompletionHandler.swift in Sources */,
-				OBJ_252 /* Request+Method.swift in Sources */,
-				OBJ_253 /* Request+Parameters.swift in Sources */,
-				OBJ_254 /* Request.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_269 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_270 /* BufferList.swift in Sources */,
-				OBJ_271 /* ClientRequest.swift in Sources */,
-				OBJ_272 /* ClientResponse.swift in Sources */,
-				OBJ_273 /* ConnectionUpgradeFactory.swift in Sources */,
-				OBJ_274 /* ConnectionUpgrader.swift in Sources */,
-				OBJ_275 /* Error.swift in Sources */,
-				OBJ_276 /* FastCGI.swift in Sources */,
-				OBJ_277 /* FastCGIRecordCreate.swift in Sources */,
-				OBJ_278 /* FastCGIRecordParser.swift in Sources */,
-				OBJ_279 /* FastCGIServer.swift in Sources */,
-				OBJ_280 /* FastCGIServerRequest.swift in Sources */,
-				OBJ_281 /* FastCGIServerResponse.swift in Sources */,
-				OBJ_282 /* HTTP.swift in Sources */,
-				OBJ_283 /* HTTPServer.swift in Sources */,
-				OBJ_284 /* HTTPServerRequest.swift in Sources */,
-				OBJ_285 /* HTTPServerResponse.swift in Sources */,
-				OBJ_286 /* IncomingHTTPSocketProcessor.swift in Sources */,
-				OBJ_287 /* KeepAliveState.swift in Sources */,
-				OBJ_288 /* HTTPParser.swift in Sources */,
-				OBJ_289 /* HTTPParserStatus.swift in Sources */,
-				OBJ_290 /* ParseResults.swift in Sources */,
-				OBJ_291 /* URLParser.swift in Sources */,
-				OBJ_292 /* HeadersContainer.swift in Sources */,
-				OBJ_293 /* IncomingSocketHandler.swift in Sources */,
-				OBJ_294 /* IncomingSocketManager.swift in Sources */,
-				OBJ_295 /* IncomingSocketProcessor.swift in Sources */,
-				OBJ_296 /* IncomingSocketProcessorCreator.swift in Sources */,
-				OBJ_297 /* ListenerGroup.swift in Sources */,
-				OBJ_298 /* SPIUtils.swift in Sources */,
-				OBJ_299 /* Server.swift in Sources */,
-				OBJ_300 /* ServerDelegate.swift in Sources */,
-				OBJ_301 /* ServerLifecycleListener.swift in Sources */,
-				OBJ_302 /* ServerMonitor.swift in Sources */,
-				OBJ_303 /* ServerState.swift in Sources */,
-				OBJ_304 /* ServerRequest.swift in Sources */,
-				OBJ_305 /* ServerResponse.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_318 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_319 /* SSLService.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_326 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_327 /* Socket.swift in Sources */,
-				OBJ_328 /* SocketProtocols.swift in Sources */,
-				OBJ_329 /* SocketUtils.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_334 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_335 /* Logger.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_340 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_341 /* http_parser.c in Sources */,
-				OBJ_342 /* utils.c in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_347 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_348 /* LclJSONSerialization.swift in Sources */,
-				OBJ_349 /* SwiftyJSON.swift in Sources */,
+				OBJ_86 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_181 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "KituraRequest::KituraRequest" /* KituraRequest */;
-			targetProxy = 646093041F8257780053C333 /* PBXContainerItemProxy */;
-		};
-		OBJ_183 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Kitura-net::KituraNet" /* KituraNet */;
-			targetProxy = 6460930F1F8257780053C333 /* PBXContainerItemProxy */;
-		};
-		OBJ_185 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "SSLService::SSLService" /* SSLService */;
-			targetProxy = 646093101F8257780053C333 /* PBXContainerItemProxy */;
-		};
-		OBJ_187 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Socket::Socket" /* Socket */;
-			targetProxy = 646093111F8257780053C333 /* PBXContainerItemProxy */;
-		};
-		OBJ_189 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "LoggerAPI::LoggerAPI" /* LoggerAPI */;
-			targetProxy = 646093121F8257780053C333 /* PBXContainerItemProxy */;
-		};
-		OBJ_191 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Kitura-net::CHTTPParser" /* CHTTPParser */;
-			targetProxy = 646093131F8257780053C333 /* PBXContainerItemProxy */;
-		};
-		OBJ_193 /* PBXTargetDependency */ = {
+		OBJ_42 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SwiftyJSON::SwiftyJSON" /* SwiftyJSON */;
-			targetProxy = 646093141F8257780053C333 /* PBXContainerItemProxy */;
+			targetProxy = 643520BF20876AB90042326F /* PBXContainerItemProxy */;
 		};
-		OBJ_209 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "KituraRequest::KituraRequest" /* KituraRequest */;
-			targetProxy = 646093151F8257780053C333 /* PBXContainerItemProxy */;
-		};
-		OBJ_210 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Kitura-net::KituraNet" /* KituraNet */;
-			targetProxy = 646093161F8257780053C333 /* PBXContainerItemProxy */;
-		};
-		OBJ_211 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "SSLService::SSLService" /* SSLService */;
-			targetProxy = 646093171F8257780053C333 /* PBXContainerItemProxy */;
-		};
-		OBJ_212 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Socket::Socket" /* Socket */;
-			targetProxy = 646093181F8257780053C333 /* PBXContainerItemProxy */;
-		};
-		OBJ_213 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "LoggerAPI::LoggerAPI" /* LoggerAPI */;
-			targetProxy = 646093191F8257780053C333 /* PBXContainerItemProxy */;
-		};
-		OBJ_214 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Kitura-net::CHTTPParser" /* CHTTPParser */;
-			targetProxy = 6460931A1F8257780053C333 /* PBXContainerItemProxy */;
-		};
-		OBJ_215 /* PBXTargetDependency */ = {
+		OBJ_52 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SwiftyJSON::SwiftyJSON" /* SwiftyJSON */;
-			targetProxy = 6460931B1F8257780053C333 /* PBXContainerItemProxy */;
+			targetProxy = 643520C020876AB90042326F /* PBXContainerItemProxy */;
 		};
-		OBJ_230 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "KituraRequest::KituraRequest" /* KituraRequest */;
-			targetProxy = 6460931C1F8257780053C333 /* PBXContainerItemProxy */;
-		};
-		OBJ_231 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Kitura-net::KituraNet" /* KituraNet */;
-			targetProxy = 6460931D1F8257780053C333 /* PBXContainerItemProxy */;
-		};
-		OBJ_232 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "SSLService::SSLService" /* SSLService */;
-			targetProxy = 6460931E1F8257780053C333 /* PBXContainerItemProxy */;
-		};
-		OBJ_233 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Socket::Socket" /* Socket */;
-			targetProxy = 6460931F1F8257780053C333 /* PBXContainerItemProxy */;
-		};
-		OBJ_234 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "LoggerAPI::LoggerAPI" /* LoggerAPI */;
-			targetProxy = 646093201F8257780053C333 /* PBXContainerItemProxy */;
-		};
-		OBJ_235 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Kitura-net::CHTTPParser" /* CHTTPParser */;
-			targetProxy = 646093211F8257780053C333 /* PBXContainerItemProxy */;
-		};
-		OBJ_236 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "SwiftyJSON::SwiftyJSON" /* SwiftyJSON */;
-			targetProxy = 646093221F8257780053C333 /* PBXContainerItemProxy */;
-		};
-		OBJ_261 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Kitura-net::KituraNet" /* KituraNet */;
-			targetProxy = 646093051F8257780053C333 /* PBXContainerItemProxy */;
-		};
-		OBJ_262 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "SSLService::SSLService" /* SSLService */;
-			targetProxy = 6460930B1F8257780053C333 /* PBXContainerItemProxy */;
-		};
-		OBJ_263 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Socket::Socket" /* Socket */;
-			targetProxy = 6460930C1F8257780053C333 /* PBXContainerItemProxy */;
-		};
-		OBJ_264 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "LoggerAPI::LoggerAPI" /* LoggerAPI */;
-			targetProxy = 6460930D1F8257780053C333 /* PBXContainerItemProxy */;
-		};
-		OBJ_265 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Kitura-net::CHTTPParser" /* CHTTPParser */;
-			targetProxy = 6460930E1F8257780053C333 /* PBXContainerItemProxy */;
-		};
-		OBJ_311 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "SSLService::SSLService" /* SSLService */;
-			targetProxy = 646093061F8257780053C333 /* PBXContainerItemProxy */;
-		};
-		OBJ_312 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Socket::Socket" /* Socket */;
-			targetProxy = 646093081F8257780053C333 /* PBXContainerItemProxy */;
-		};
-		OBJ_313 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "LoggerAPI::LoggerAPI" /* LoggerAPI */;
-			targetProxy = 646093091F8257780053C333 /* PBXContainerItemProxy */;
-		};
-		OBJ_314 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Kitura-net::CHTTPParser" /* CHTTPParser */;
-			targetProxy = 6460930A1F8257780053C333 /* PBXContainerItemProxy */;
-		};
-		OBJ_322 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Socket::Socket" /* Socket */;
-			targetProxy = 646093071F8257780053C333 /* PBXContainerItemProxy */;
-		};
-		OBJ_355 /* PBXTargetDependency */ = {
+		OBJ_63 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "PazWorldTides::PazWorldTidesiOSTests" /* PazWorldTidesiOSTests */;
-			targetProxy = 646093231F8257780053C333 /* PBXContainerItemProxy */;
+			targetProxy = 643520C220876AB90042326F /* PBXContainerItemProxy */;
 		};
-		OBJ_356 /* PBXTargetDependency */ = {
+		OBJ_65 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "PazWorldTides::PazWorldTidesMacTests" /* PazWorldTidesMacTests */;
-			targetProxy = 646093241F8257780053C333 /* PBXContainerItemProxy */;
+			targetProxy = 643520C320876AB90042326F /* PBXContainerItemProxy */;
+		};
+		OBJ_73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftyJSON::SwiftyJSON" /* SwiftyJSON */;
+			targetProxy = 643520C120876AB90042326F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		641F06A11F9CC21B0003E73D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "PazWorldTides-iOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.paz-labs.PazWorldTides-iOS";
-				PRODUCT_NAME = PazWorldTides;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		641F06A21F9CC21B0003E73D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "PazWorldTides-iOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.paz-labs.PazWorldTides-iOS";
-				PRODUCT_NAME = PazWorldTides;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		OBJ_123 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		OBJ_124 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		OBJ_129 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		OBJ_130 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		OBJ_135 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		OBJ_136 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		OBJ_141 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		OBJ_142 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		OBJ_147 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		OBJ_148 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		OBJ_153 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		OBJ_154 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		OBJ_159 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		OBJ_160 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		OBJ_165 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Kitura-net.git--7410958935072501107/Sources/CHTTPParser/include",
-					"$(SRCROOT)/.build/checkouts/CCurl.git-8026296523752779197",
-					"$(SRCROOT)/PazWorldTides.xcodeproj/GeneratedModuleMap/CHTTPParser",
-				);
-				INFOPLIST_FILE = PazWorldTides.xcodeproj/PazWorldTides_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/PazWorldTides.xcodeproj/GeneratedModuleMap/CHTTPParser/module.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = PazWorldTides;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = macosx;
-				SWIFT_VERSION = 3.0;
-				TARGET_NAME = PazWorldTides;
-			};
-			name = Debug;
-		};
-		OBJ_166 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Kitura-net.git--7410958935072501107/Sources/CHTTPParser/include",
-					"$(SRCROOT)/.build/checkouts/CCurl.git-8026296523752779197",
-					"$(SRCROOT)/PazWorldTides.xcodeproj/GeneratedModuleMap/CHTTPParser",
-				);
-				INFOPLIST_FILE = PazWorldTides.xcodeproj/PazWorldTides_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/PazWorldTides.xcodeproj/GeneratedModuleMap/CHTTPParser/module.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = PazWorldTides;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = macosx;
-				SWIFT_VERSION = 3.0;
-				TARGET_NAME = PazWorldTides;
-			};
-			name = Release;
-		};
-		OBJ_197 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Kitura-net.git--7410958935072501107/Sources/CHTTPParser/include",
-					"$(SRCROOT)/.build/checkouts/CCurl.git-8026296523752779197",
-					"$(SRCROOT)/PazWorldTides.xcodeproj/GeneratedModuleMap/CHTTPParser",
-				);
-				INFOPLIST_FILE = PazWorldTides.xcodeproj/PazWorldTidesMacTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/PazWorldTides.xcodeproj/GeneratedModuleMap/CHTTPParser/module.modulemap";
-				SWIFT_VERSION = 3.0;
-				TARGET_NAME = PazWorldTidesMacTests;
-			};
-			name = Debug;
-		};
-		OBJ_198 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Kitura-net.git--7410958935072501107/Sources/CHTTPParser/include",
-					"$(SRCROOT)/.build/checkouts/CCurl.git-8026296523752779197",
-					"$(SRCROOT)/PazWorldTides.xcodeproj/GeneratedModuleMap/CHTTPParser",
-				);
-				INFOPLIST_FILE = PazWorldTides.xcodeproj/PazWorldTidesMacTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/PazWorldTides.xcodeproj/GeneratedModuleMap/CHTTPParser/module.modulemap";
-				SWIFT_VERSION = 3.0;
-				TARGET_NAME = PazWorldTidesMacTests;
-			};
-			name = Release;
-		};
-		OBJ_218 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Kitura-net.git--7410958935072501107/Sources/CHTTPParser/include",
-					"$(SRCROOT)/.build/checkouts/CCurl.git-8026296523752779197",
-					"$(SRCROOT)/PazWorldTides.xcodeproj/GeneratedModuleMap/CHTTPParser",
-				);
-				INFOPLIST_FILE = PazWorldTides.xcodeproj/PazWorldTidesiOSTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/PazWorldTides.xcodeproj/GeneratedModuleMap/CHTTPParser/module.modulemap";
-				SWIFT_VERSION = 3.0;
-				TARGET_NAME = PazWorldTidesiOSTests;
-			};
-			name = Debug;
-		};
-		OBJ_219 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Kitura-net.git--7410958935072501107/Sources/CHTTPParser/include",
-					"$(SRCROOT)/.build/checkouts/CCurl.git-8026296523752779197",
-					"$(SRCROOT)/PazWorldTides.xcodeproj/GeneratedModuleMap/CHTTPParser",
-				);
-				INFOPLIST_FILE = PazWorldTides.xcodeproj/PazWorldTidesiOSTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/PazWorldTides.xcodeproj/GeneratedModuleMap/CHTTPParser/module.modulemap";
-				SWIFT_VERSION = 3.0;
-				TARGET_NAME = PazWorldTidesiOSTests;
-			};
-			name = Release;
-		};
-		OBJ_238 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Kitura-net.git--7410958935072501107/Sources/CHTTPParser/include",
-					"$(SRCROOT)/.build/checkouts/CCurl.git-8026296523752779197",
-					"$(SRCROOT)/PazWorldTides.xcodeproj/GeneratedModuleMap/CHTTPParser",
-				);
-				INFOPLIST_FILE = PazWorldTides.xcodeproj/KituraRequest_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/PazWorldTides.xcodeproj/GeneratedModuleMap/CHTTPParser/module.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = KituraRequest;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGET_NAME = KituraRequest;
-			};
-			name = Debug;
-		};
-		OBJ_239 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Kitura-net.git--7410958935072501107/Sources/CHTTPParser/include",
-					"$(SRCROOT)/.build/checkouts/CCurl.git-8026296523752779197",
-					"$(SRCROOT)/PazWorldTides.xcodeproj/GeneratedModuleMap/CHTTPParser",
-				);
-				INFOPLIST_FILE = PazWorldTides.xcodeproj/KituraRequest_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/PazWorldTides.xcodeproj/GeneratedModuleMap/CHTTPParser/module.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = KituraRequest;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGET_NAME = KituraRequest;
-			};
-			name = Release;
-		};
-		OBJ_267 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Kitura-net.git--7410958935072501107/Sources/CHTTPParser/include",
-					"$(SRCROOT)/.build/checkouts/CCurl.git-8026296523752779197",
-					"$(SRCROOT)/PazWorldTides.xcodeproj/GeneratedModuleMap/CHTTPParser",
-				);
-				INFOPLIST_FILE = PazWorldTides.xcodeproj/KituraNet_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/PazWorldTides.xcodeproj/GeneratedModuleMap/CHTTPParser/module.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = KituraNet;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = KituraNet;
-			};
-			name = Debug;
-		};
-		OBJ_268 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Kitura-net.git--7410958935072501107/Sources/CHTTPParser/include",
-					"$(SRCROOT)/.build/checkouts/CCurl.git-8026296523752779197",
-					"$(SRCROOT)/PazWorldTides.xcodeproj/GeneratedModuleMap/CHTTPParser",
-				);
-				INFOPLIST_FILE = PazWorldTides.xcodeproj/KituraNet_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/PazWorldTides.xcodeproj/GeneratedModuleMap/CHTTPParser/module.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = KituraNet;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = KituraNet;
-			};
-			name = Release;
-		};
 		OBJ_3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2205,7 +456,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_316 /* Debug */ = {
+		OBJ_32 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -2214,20 +465,21 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = PazWorldTides.xcodeproj/SSLService_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				INFOPLIST_FILE = PazWorldTides.xcodeproj/PazWorldTides_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = SSLService;
+				PRODUCT_BUNDLE_IDENTIFIER = PazWorldTides;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = SSLService;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = PazWorldTides;
 			};
 			name = Debug;
 		};
-		OBJ_317 /* Release */ = {
+		OBJ_33 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -2236,224 +488,17 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = PazWorldTides.xcodeproj/SSLService_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				INFOPLIST_FILE = PazWorldTides.xcodeproj/PazWorldTides_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = SSLService;
+				PRODUCT_BUNDLE_IDENTIFIER = PazWorldTides;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = SSLService;
-			};
-			name = Release;
-		};
-		OBJ_324 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = PazWorldTides.xcodeproj/Socket_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Socket;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = Socket;
-			};
-			name = Debug;
-		};
-		OBJ_325 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = PazWorldTides.xcodeproj/Socket_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Socket;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = Socket;
-			};
-			name = Release;
-		};
-		OBJ_332 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = PazWorldTides.xcodeproj/LoggerAPI_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = LoggerAPI;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = LoggerAPI;
-			};
-			name = Debug;
-		};
-		OBJ_333 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = PazWorldTides.xcodeproj/LoggerAPI_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = LoggerAPI;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = LoggerAPI;
-			};
-			name = Release;
-		};
-		OBJ_338 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEFINES_MODULE = NO;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Kitura-net.git--7410958935072501107/Sources/CHTTPParser/include",
-					"$(SRCROOT)/.build/checkouts/CCurl.git-8026296523752779197",
-				);
-				INFOPLIST_FILE = PazWorldTides.xcodeproj/CHTTPParser_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = CHTTPParser;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				TARGET_NAME = CHTTPParser;
-			};
-			name = Debug;
-		};
-		OBJ_339 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEFINES_MODULE = NO;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Kitura-net.git--7410958935072501107/Sources/CHTTPParser/include",
-					"$(SRCROOT)/.build/checkouts/CCurl.git-8026296523752779197",
-				);
-				INFOPLIST_FILE = PazWorldTides.xcodeproj/CHTTPParser_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = CHTTPParser;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				TARGET_NAME = CHTTPParser;
-			};
-			name = Release;
-		};
-		OBJ_345 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = PazWorldTides.xcodeproj/SwiftyJSON_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = SwiftyJSON;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = SwiftyJSON;
-			};
-			name = Debug;
-		};
-		OBJ_346 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = PazWorldTides.xcodeproj/SwiftyJSON_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = SwiftyJSON;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = SwiftyJSON;
-			};
-			name = Release;
-		};
-		OBJ_353 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		OBJ_354 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Release;
-		};
-		OBJ_359 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		OBJ_360 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = PazWorldTides;
 			};
 			name = Release;
 		};
@@ -2477,99 +522,179 @@
 			};
 			name = Release;
 		};
+		OBJ_46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PazWorldTides.xcodeproj/PazWorldTidesMacTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = PazWorldTidesMacTests;
+			};
+			name = Debug;
+		};
+		OBJ_47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PazWorldTides.xcodeproj/PazWorldTidesMacTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = PazWorldTidesMacTests;
+			};
+			name = Release;
+		};
+		OBJ_55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		OBJ_56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		OBJ_61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PazWorldTides.xcodeproj/PazWorldTidesiOSTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = PazWorldTidesiOSTests;
+			};
+			name = Debug;
+		};
+		OBJ_68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PazWorldTides.xcodeproj/PazWorldTidesiOSTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = PazWorldTidesiOSTests;
+			};
+			name = Release;
+		};
+		OBJ_75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PazWorldTides.xcodeproj/SwiftyJSON_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftyJSON;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = SwiftyJSON;
+			};
+			name = Debug;
+		};
+		OBJ_76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PazWorldTides.xcodeproj/SwiftyJSON_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftyJSON;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGET_NAME = SwiftyJSON;
+			};
+			name = Release;
+		};
+		OBJ_83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		OBJ_84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		641F06A01F9CC21B0003E73D /* Build configuration list for PBXNativeTarget "PazWorldTides-iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				641F06A11F9CC21B0003E73D /* Debug */,
-				641F06A21F9CC21B0003E73D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_122 /* Build configuration list for PBXNativeTarget "PazWorldTidesPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_123 /* Debug */,
-				OBJ_124 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_128 /* Build configuration list for PBXNativeTarget "KituraRequestPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_129 /* Debug */,
-				OBJ_130 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_134 /* Build configuration list for PBXNativeTarget "Kitura-netPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_135 /* Debug */,
-				OBJ_136 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_140 /* Build configuration list for PBXNativeTarget "SSLServicePackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_141 /* Debug */,
-				OBJ_142 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_146 /* Build configuration list for PBXNativeTarget "SocketPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_147 /* Debug */,
-				OBJ_148 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_152 /* Build configuration list for PBXNativeTarget "LoggerAPIPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_153 /* Debug */,
-				OBJ_154 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_158 /* Build configuration list for PBXNativeTarget "SwiftyJSONPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_159 /* Debug */,
-				OBJ_160 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_164 /* Build configuration list for PBXNativeTarget "PazWorldTides-Mac" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_165 /* Debug */,
-				OBJ_166 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_196 /* Build configuration list for PBXNativeTarget "PazWorldTidesMacTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_197 /* Debug */,
-				OBJ_198 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
 		OBJ_2 /* Build configuration list for PBXProject "PazWorldTides" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2577,97 +702,70 @@
 				OBJ_4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
-		OBJ_217 /* Build configuration list for PBXNativeTarget "PazWorldTidesiOSTests" */ = {
+		OBJ_31 /* Build configuration list for PBXNativeTarget "PazWorldTides" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_218 /* Debug */,
-				OBJ_219 /* Release */,
+				OBJ_32 /* Debug */,
+				OBJ_33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
-		OBJ_237 /* Build configuration list for PBXNativeTarget "KituraRequest" */ = {
+		OBJ_45 /* Build configuration list for PBXNativeTarget "PazWorldTidesMacTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_238 /* Debug */,
-				OBJ_239 /* Release */,
+				OBJ_46 /* Debug */,
+				OBJ_47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
-		OBJ_266 /* Build configuration list for PBXNativeTarget "KituraNet" */ = {
+		OBJ_54 /* Build configuration list for PBXNativeTarget "PazWorldTidesPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_267 /* Debug */,
-				OBJ_268 /* Release */,
+				OBJ_55 /* Debug */,
+				OBJ_56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
-		OBJ_315 /* Build configuration list for PBXNativeTarget "SSLService" */ = {
+		OBJ_60 /* Build configuration list for PBXAggregateTarget "PazWorldTidesPackageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_316 /* Debug */,
-				OBJ_317 /* Release */,
+				OBJ_61 /* Debug */,
+				OBJ_62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
-		OBJ_323 /* Build configuration list for PBXNativeTarget "Socket" */ = {
+		OBJ_66 /* Build configuration list for PBXNativeTarget "PazWorldTidesiOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_324 /* Debug */,
-				OBJ_325 /* Release */,
+				OBJ_67 /* Debug */,
+				OBJ_68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
-		OBJ_331 /* Build configuration list for PBXNativeTarget "LoggerAPI" */ = {
+		OBJ_74 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_332 /* Debug */,
-				OBJ_333 /* Release */,
+				OBJ_75 /* Debug */,
+				OBJ_76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
-		OBJ_337 /* Build configuration list for PBXNativeTarget "CHTTPParser" */ = {
+		OBJ_82 /* Build configuration list for PBXNativeTarget "SwiftyJSONPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_338 /* Debug */,
-				OBJ_339 /* Release */,
+				OBJ_83 /* Debug */,
+				OBJ_84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_344 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_345 /* Debug */,
-				OBJ_346 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_352 /* Build configuration list for PBXAggregateTarget "PazWorldTidesPackageTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_353 /* Debug */,
-				OBJ_354 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_358 /* Build configuration list for PBXAggregateTarget "CCurl" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_359 /* Debug */,
-				OBJ_360 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
