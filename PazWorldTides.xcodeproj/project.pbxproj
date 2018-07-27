@@ -380,6 +380,7 @@
 /* Begin PBXFileReference section */
 		641F069B1F9CC21B0003E73D /* PazWorldTides.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PazWorldTides.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		641F069E1F9CC21B0003E73D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64FE57DB210B4E2B00BD98AB /* PazWorldTides.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = PazWorldTides.podspec; sourceTree = "<group>"; };
 		"Kitura-net::CHTTPParser::Product" /* CHTTPParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CHTTPParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Kitura-net::KituraNet::Product" /* KituraNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KituraNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"KituraRequest::KituraRequest::Product" /* KituraRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KituraRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -802,6 +803,7 @@
 		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
+				64FE57DB210B4E2B00BD98AB /* PazWorldTides.podspec */,
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_13 /* Tests */,
